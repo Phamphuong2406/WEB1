@@ -1,0 +1,42 @@
+﻿@using Web1.ViewModel
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+@foreach(var item in Model.generalDesription){
+<div><h2>@item.title</h2>
+    <h2>@item.description</h2>
+        <div class="partners-grid">
+            @foreach (var partner in item.partners)
+            {
+                <div class="partner-item">
+                    <img src="~/images/@partner.Logo" alt="@partner.Name" width="100" />
+                    <p>@partner.Name</p>
+                </div>
+            }
+        </div>
+    </div>
+}
+<footer>
+    @foreach (var item in Model.Footer)
+    {
+        <div>
+            <h2>@item.Title</h2>
+            <div class="partners-grid">
+                @foreach (var partner in item.LinkGroups)
+                {
+                    <div class="partner-item">
+                        <p>@partner.GroupTitle</p>
+                        @foreach (var Item in partner.Links)
+                        {
+                            <div class="partner-item">
+                                <p>@Item.Url</p>
+                                <p>@Item.Text</p>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</footer>
