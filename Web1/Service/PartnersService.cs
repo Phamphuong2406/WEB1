@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Web1.Models;
-using Web1.Repository;
+
 
 namespace Web1.Service
 {
@@ -17,19 +17,19 @@ namespace Web1.Service
             {
                   new GeneralDesription
             {
-                title = "Title1",
-                description = "description1",
+                title = "Referanslarımız",
+                description = "Bize güvenen ve beraber çalıştığımız iş ortaklarımız",
                 partners = new List<Partners>
                 {
                     new Partners
                     {
-                Logo = "Conpany1.png",
+                Logo = "logo1.png",
                 Name="Company1"
                     },
                     new Partners
                 {
                     Name = "Company2",
-                    Logo = "logo2.png"
+                    Logo = "logo2.jpg"
                 },
                     new Partners
                 {
@@ -45,7 +45,13 @@ namespace Web1.Service
                 {
                     Name = "Company5",
                     Logo = "logo5.png"
-                } }
+                } ,
+                new Partners
+                {
+                    Name ="Company6",
+                    Logo="logo6.png"
+                }
+                }
                 }
             };
         }

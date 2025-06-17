@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Intro1.png" />
+    <None Include="wwwroot\images\Intro2.png" />
+  </ItemGroup>
+
 </Project>

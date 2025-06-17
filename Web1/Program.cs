@@ -5,7 +5,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IFooterService, FooterService>();
+builder.Services.AddTransient<IServiceFeatureService, ServiceFeatureService>();
+builder.Services.AddTransient<IHeaderService, HeaderService>();
+builder.Services.AddTransient<IBlock6Service, Block6Service>();
 builder.Services.AddScoped<IPartnersService, PartnersService>();
+builder.Services.AddScoped<IIntroduceService, IntroduceService>();
+builder.Services.AddTransient<IMenuService, MenuService>();
 
 var app = builder.Build();
 
