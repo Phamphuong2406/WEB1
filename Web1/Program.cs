@@ -11,6 +11,7 @@ builder.Services.AddTransient<IBlock6Service, Block6Service>();
 builder.Services.AddScoped<IPartnersService, PartnersService>();
 builder.Services.AddScoped<IIntroduceService, IntroduceService>();
 builder.Services.AddTransient<IMenuService, MenuService>();
+builder.Services.AddTransient<IBlock3Service, Block3Service>();
 
 var app = builder.Build();
 

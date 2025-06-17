@@ -6,5 +6,6 @@
         public string title { get; set; }
         public string description { get; set; }
         public string Image { get; set; }
+        public string TitleButton { get; set; }
     }
 }

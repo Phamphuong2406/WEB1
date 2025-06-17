@@ -11,5 +11,6 @@ namespace Web1.ViewModel
         public Block6 block6 { get; set; }
         public Header header { get; set; }
         public List<Menu> menu { get; set; }
+        public List<Block3Title> block3s { get; set; }
     }
 }

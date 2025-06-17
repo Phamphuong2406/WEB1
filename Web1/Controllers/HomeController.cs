@@ -17,7 +17,8 @@ namespace Web1.Controllers
         private IBlock6Service _block6Service;
         private IHeaderService _headervice;
         private IMenuService _menuService;
-        public HomeController(ILogger<HomeController> logger, IFooterService footerService, IPartnersService partnersService, IIntroduceService introduceService, IServiceFeatureService serviceFeatureService, IBlock6Service block6Service, IHeaderService headerService, IMenuService menuService)
+        private IBlock3Service _block3Service;
+        public HomeController(ILogger<HomeController> logger, IFooterService footerService, IPartnersService partnersService, IIntroduceService introduceService, IServiceFeatureService serviceFeatureService, IBlock6Service block6Service, IHeaderService headerService, IMenuService menuService, IBlock3Service block3Service)
         {
             _logger = logger;
             _footerService = footerService;
@@ -27,6 +28,7 @@ namespace Web1.Controllers
             _block6Service = block6Service;
             _headervice = headerService;
             _menuService = menuService;
+            _block3Service = block3Service;
         }
 
         public IActionResult Index()
@@ -39,7 +41,8 @@ namespace Web1.Controllers
                 generalserviceFeatures = _serviceFeatureService.getServiceFeature(),
                 block6 = _block6Service.GetBlock6(),
                 header = _headervice.GetHeader(),
-                menu = _menuService.GetMenu()
+                menu = _menuService.GetMenu(),
+                block3s = _block3Service.GetBlock3()
             };
             return View(vm);
         }
