@@ -6,16 +6,14 @@ namespace Web1.Service
 {
     public interface IPartnersService
     {
-        List<GeneralDesription> GetPartners();
+        GeneralDesription GetPartners();
 
     }
     public class PartnersService : IPartnersService
     {
-        public List<GeneralDesription> GetPartners()
+        public GeneralDesription GetPartners()
         {
-            return new List<GeneralDesription>
-            {
-                  new GeneralDesription
+            return new GeneralDesription
             {
                 title = "Referanslarımız",
                 description = "Bize güvenen ve beraber çalıştığımız iş ortaklarımız",
@@ -29,7 +27,7 @@ namespace Web1.Service
                     new Partners
                 {
                     Name = "Company2",
-                    Logo = "logo2.jpg"
+                    Logo = "logo2.png"
                 },
                     new Partners
                 {
@@ -50,8 +48,22 @@ namespace Web1.Service
                 {
                     Name ="Company6",
                     Logo="logo6.png"
-                }
-                }
+                },
+                    new Partners
+                {
+                    Name = "Company7",
+                    Logo = "logo7.png"
+                } ,
+                        new Partners
+                {
+                    Name = "Company8",
+                    Logo = "logo8.png"
+                } ,
+                            new Partners
+                {
+                    Name = "Company9",
+                    Logo = "logo9.png"
+                } 
                 }
             };
         }

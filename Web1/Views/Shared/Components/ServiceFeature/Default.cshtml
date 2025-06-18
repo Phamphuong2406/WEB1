@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Web1.Models.GeneralServiceFeature>
+
+<section class=" section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 mt-5 mt-lg-0">
+                <div class="about-thum">
+                    @foreach (var general in Model)
+                    {
+                        
+                        @Html.Partial("_ServiceFeatureTitlePartial", general)
+                        <div class="row">
+                            @foreach (var item in general.serviceFeature)
+                            {
+                                @Html.Partial("_ServiceFeaturePartial", item)
+                            }
+
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

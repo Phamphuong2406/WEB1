@@ -3,28 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\Web1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\partners\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\partners\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\partnersviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\partnersviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\partners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\partners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\footerlinkgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\footerlinkgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\partnersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\partnersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iblock3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iblock3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iblock6service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iblock6service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\servicefeature\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\servicefeature\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\ifooterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\ifooterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\introduce\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\introduce\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\menu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\menu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\servicefeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\servicefeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_footer1partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_footer1partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_block6partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_block6partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\block3\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\block3\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\block6\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\block6\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\components\\footer\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\components\\footer\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_partnerspatial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_partnerspatial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_headerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_headerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\wwwroot\\css\\magnific-popup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\wwwroot\\css\\magnific-popup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\wwwroot\\css\\owl-carousel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\wwwroot\\css\\owl-carousel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\wwwroot\\css\\bootstrap-icons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\wwwroot\\css\\bootstrap-icons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iintroduceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,24 +123,112 @@
       "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iservicefeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\introduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\introduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\ifooterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\ifooterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iblock6service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iblock6service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\service\\iblock3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\service\\iblock3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\block6viewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\block6viewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\block3viewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\block3viewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_introduceevenpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_introduceevenpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_introduceoddpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_introduceoddpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_headerimagepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_headerimagepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_block3patial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_block3patial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_partnerstitlepatial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_partnerstitlepatial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_servicefeaturetitlepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_servicefeaturetitlepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_servicefeaturepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_servicefeaturepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_footer3partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_footer3partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_footer2partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_footer2partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\footerlinkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\footerlinkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\footermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\footermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\block3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\block3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\views\\shared\\_block3titlepatial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_block3titlepatial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\menuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\menuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\servicefeatureviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\servicefeatureviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\introduceviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\introduceviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\viewcomponents\\footerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\viewcomponents\\footerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|c:\\users\\admin\\source\\repos\\web1\\web1\\models\\introduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73903159-461C-4B3D-874D-21FE8F5DD1FC}|Web1\\Web1.csproj|solutionrelative:web1\\models\\introduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,154 +238,362 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IBlock6Service.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock6Service.cs",
-              "RelativeDocumentMoniker": "Web1\\Service\\IBlock6Service.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock6Service.cs",
-              "RelativeToolTip": "Web1\\Service\\IBlock6Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:11:19.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IHeaderService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IHeaderService.cs",
-              "RelativeDocumentMoniker": "Web1\\Service\\IHeaderService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IHeaderService.cs",
-              "RelativeToolTip": "Web1\\Service\\IHeaderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:11:13.663Z",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Web1\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\index.html",
+              "RelativeToolTip": "Web1\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-18T09:08:14.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IMenuService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IMenuService.cs",
-              "RelativeDocumentMoniker": "Web1\\Service\\IMenuService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IMenuService.cs",
-              "RelativeToolTip": "Web1\\Service\\IMenuService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:07:08.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IIntroduceService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IIntroduceService.cs",
-              "RelativeDocumentMoniker": "Web1\\Service\\IIntroduceService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IIntroduceService.cs",
-              "RelativeToolTip": "Web1\\Service\\IIntroduceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T09:38:12.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PartnersService.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\PartnersService.cs",
               "RelativeDocumentMoniker": "Web1\\Service\\PartnersService.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\PartnersService.cs",
               "RelativeToolTip": "Web1\\Service\\PartnersService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswBgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T09:38:09.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FooterLinkGroup.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\FooterLinkGroup.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\FooterLinkGroup.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\FooterLinkGroup.cs",
+              "RelativeToolTip": "Web1\\Models\\FooterLinkGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:09:13.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAwwFIAAAAAAAAAAAAAAA==",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Partners\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Partners\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Partners\\Default.cshtml*",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Partners\\Default.cshtml*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T08:41:10.948Z",
+              "WhenOpened": "2025-06-18T02:48:52.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IFooterService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IFooterService.cs",
-              "RelativeDocumentMoniker": "Web1\\Service\\IFooterService.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IFooterService.cs",
-              "RelativeToolTip": "Web1\\Service\\IFooterService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Partners.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Partners.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\Partners.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Partners.cs",
+              "RelativeToolTip": "Web1\\Models\\Partners.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T09:56:53.215Z",
+              "WhenOpened": "2025-06-18T02:51:24.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Program.cs",
-              "RelativeDocumentMoniker": "Web1\\Program.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Program.cs",
-              "RelativeToolTip": "Web1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PartnersViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\PartnersViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\PartnersViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\PartnersViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\PartnersViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T09:26:45.215Z",
+              "WhenOpened": "2025-06-18T02:43:21.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewModel\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "Web1\\ViewModel\\HomeViewModel.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewModel\\HomeViewModel.cs",
               "RelativeToolTip": "Web1\\ViewModel\\HomeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T09:25:52.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBlock3Service.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock3Service.cs",
-              "RelativeDocumentMoniker": "Web1\\Service\\IBlock3Service.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock3Service.cs",
-              "RelativeToolTip": "Web1\\Service\\IBlock3Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T09:02:29.758Z",
+              "DocumentIndex": 8,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Menu\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Menu\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Menu\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Menu\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:43:23.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Introduce\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Introduce\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Introduce\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Introduce\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:02:12.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\ServiceFeature\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\ServiceFeature\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\ServiceFeature\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\ServiceFeature\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:21:57.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Web1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Web1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAAAkAAAAAAAAAA==",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Web1\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T08:41:07.407Z",
+              "WhenOpened": "2025-06-18T02:09:10.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:36:39.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Block3\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Block3\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Block3\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Block3\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:48:44.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceFeature.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\ServiceFeature.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\ServiceFeature.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\ServiceFeature.cs",
+              "RelativeToolTip": "Web1\\Models\\ServiceFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:22:29.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Footer1Partial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Footer1Partial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Footer1Partial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Footer1Partial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Footer1Partial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:45:47.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Block6Partial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Block6Partial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Block6Partial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Block6Partial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Block6Partial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:41:03.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Block6\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Block6\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Block6\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Block6\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:30:45.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T02:40:04.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T08:41:10.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_PartnersPatial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_PartnersPatial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_PartnersPatial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_PartnersPatial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_PartnersPatial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:12:32.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_HeaderPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_HeaderPartial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_HeaderPartial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_HeaderPartial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_HeaderPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:20:47.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T08:44:13.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "Web1\\wwwroot\\css\\bootstrap.min.css",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\bootstrap.min.css",
+              "RelativeToolTip": "Web1\\wwwroot\\css\\bootstrap.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T08:44:24.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "magnific-popup.css",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\magnific-popup.css",
+              "RelativeDocumentMoniker": "Web1\\wwwroot\\css\\magnific-popup.css",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\magnific-popup.css",
+              "RelativeToolTip": "Web1\\wwwroot\\css\\magnific-popup.css",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T08:44:29.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "owl-carousel.css",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\owl-carousel.css",
+              "RelativeDocumentMoniker": "Web1\\wwwroot\\css\\owl-carousel.css",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\owl-carousel.css",
+              "RelativeToolTip": "Web1\\wwwroot\\css\\owl-carousel.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T08:44:51.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Web1\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Web1\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T08:44:54.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "bootstrap-icons.css",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\bootstrap-icons.css",
+              "RelativeDocumentMoniker": "Web1\\wwwroot\\css\\bootstrap-icons.css",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\wwwroot\\css\\bootstrap-icons.css",
+              "RelativeToolTip": "Web1\\wwwroot\\css\\bootstrap-icons.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T08:44:25.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "IServiceFeatureService.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IServiceFeatureService.cs",
               "RelativeDocumentMoniker": "Web1\\Service\\IServiceFeatureService.cs",
@@ -226,29 +606,369 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Introduce.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Introduce.cs",
-              "RelativeDocumentMoniker": "Web1\\Models\\Introduce.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Introduce.cs",
-              "RelativeToolTip": "Web1\\Models\\Introduce.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "IMenuService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IMenuService.cs",
+              "RelativeDocumentMoniker": "Web1\\Service\\IMenuService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IMenuService.cs",
+              "RelativeToolTip": "Web1\\Service\\IMenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T09:56:13.535Z",
+              "WhenOpened": "2025-06-17T10:07:08.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
+              "Title": "IIntroduceService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IIntroduceService.cs",
+              "RelativeDocumentMoniker": "Web1\\Service\\IIntroduceService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IIntroduceService.cs",
+              "RelativeToolTip": "Web1\\Service\\IIntroduceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T09:38:12.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IHeaderService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IHeaderService.cs",
+              "RelativeDocumentMoniker": "Web1\\Service\\IHeaderService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IHeaderService.cs",
+              "RelativeToolTip": "Web1\\Service\\IHeaderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T10:11:13.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IBlock6Service.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock6Service.cs",
+              "RelativeDocumentMoniker": "Web1\\Service\\IBlock6Service.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock6Service.cs",
+              "RelativeToolTip": "Web1\\Service\\IBlock6Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T10:11:19.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IFooterService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IFooterService.cs",
+              "RelativeDocumentMoniker": "Web1\\Service\\IFooterService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IFooterService.cs",
+              "RelativeToolTip": "Web1\\Service\\IFooterService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T09:56:53.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IBlock3Service.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock3Service.cs",
+              "RelativeDocumentMoniker": "Web1\\Service\\IBlock3Service.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Service\\IBlock3Service.cs",
+              "RelativeToolTip": "Web1\\Service\\IBlock3Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T09:02:29.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Block6ViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\Block6ViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\Block6ViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\Block6ViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\Block6ViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:26:18.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Block3ViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\Block3ViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\Block3ViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\Block3ViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\Block3ViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:45:52.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_IntroduceEvenPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_IntroduceEvenPartial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_IntroduceEvenPartial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_IntroduceEvenPartial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_IntroduceEvenPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:26:19.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_IntroduceOddPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_IntroduceOddPartial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_IntroduceOddPartial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_IntroduceOddPartial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_IntroduceOddPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:28:23.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "_HeaderImagePartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_HeaderImagePartial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_HeaderImagePartial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_HeaderImagePartial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_HeaderImagePartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:19:31.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_Block3Patial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Block3Patial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Block3Patial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Block3Patial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Block3Patial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:35:00.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_PartnersTitlePatial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_PartnersTitlePatial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_PartnersTitlePatial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_PartnersTitlePatial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_PartnersTitlePatial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:10:44.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_ServiceFeatureTitlePartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_ServiceFeatureTitlePartial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_ServiceFeatureTitlePartial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_ServiceFeatureTitlePartial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_ServiceFeatureTitlePartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:18:41.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_ServiceFeaturePartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_ServiceFeaturePartial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_ServiceFeaturePartial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_ServiceFeaturePartial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_ServiceFeaturePartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:27:51.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Program.cs",
+              "RelativeDocumentMoniker": "Web1\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Program.cs",
+              "RelativeToolTip": "Web1\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T09:26:45.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_Footer2Partial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Footer2Partial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Footer2Partial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Footer2Partial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Footer2Partial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:47:45.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_Footer3Partial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Footer3Partial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Footer3Partial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Footer3Partial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Footer3Partial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:49:28.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FooterLinkItem.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\FooterLinkItem.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\FooterLinkItem.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\FooterLinkItem.cs",
+              "RelativeToolTip": "Web1\\Models\\FooterLinkItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:32:21.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FooterModel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\FooterModel.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\FooterModel.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\FooterModel.cs",
+              "RelativeToolTip": "Web1\\Models\\FooterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:32:20.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "Block3.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Block3.cs",
               "RelativeDocumentMoniker": "Web1\\Models\\Block3.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Block3.cs",
               "RelativeToolTip": "Web1\\Models\\Block3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T09:02:20.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T09:02:20.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "_Block3TitlePatial.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Block3TitlePatial.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Block3TitlePatial.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Views\\Shared\\_Block3TitlePatial.cshtml",
+              "RelativeToolTip": "Web1\\Views\\Shared\\_Block3TitlePatial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:32:33.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Web1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Web1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T08:41:07.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "MenuViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\MenuViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\MenuViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\MenuViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\MenuViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:40:13.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ServiceFeatureViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\ServiceFeatureViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\ServiceFeatureViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\ServiceFeatureViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\ServiceFeatureViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:15:56.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "HeaderViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\HeaderViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\HeaderViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\HeaderViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\HeaderViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:33:06.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Introduce.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Introduce.cs",
+              "RelativeDocumentMoniker": "Web1\\Models\\Introduce.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\Models\\Introduce.cs",
+              "RelativeToolTip": "Web1\\Models\\Introduce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T09:56:13.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IntroduceViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\IntroduceViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\IntroduceViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\IntroduceViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\IntroduceViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:54:27.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "FooterViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\FooterViewComponent.cs",
+              "RelativeDocumentMoniker": "Web1\\ViewComponents\\FooterViewComponent.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\Web1\\Web1\\ViewComponents\\FooterViewComponent.cs",
+              "RelativeToolTip": "Web1\\ViewComponents\\FooterViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:24:39.619Z"
             }
           ]
         }

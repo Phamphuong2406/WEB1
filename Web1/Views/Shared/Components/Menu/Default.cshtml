@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Web1.Models.Menu>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-transparent">
+    <div class="container">
+        <div class="collapse navbar-collapse" style="margin-left: 300px;" id="navbarNav">
+            @foreach (var item in Model)
+            {
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><h1 class="nav-link text-black fw-bold">@item.Title</h1></li>
+
+                </ul>
+            }
+
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Web1.Models.Introduce>
+@{
+    var list = Model.ToList();
+}
+<section class="section" id="about">
+    <div class="container">
+        @for (int i = 0; i < list.Count(); i++)
+        {
+            bool isEvent = i % 2 == 0;
+            var item = list[i];
+            if (isEvent)
+            {
+                <div class="row">
+                    @Html.Partial("_IntroduceEvenPartial", item)
+                   
+
+                </div>
+            }
+            else
+            {
+                <div class="row" style="margin-top:50px">
+                    @Html.Partial("_IntroduceOddPartial", item)
+                  
+
+                </div>
+            }
+        }
+
+
+    </div>
+</section>

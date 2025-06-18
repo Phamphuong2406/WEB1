@@ -1,0 +1,9 @@
+﻿@model Web1.Models.Header
+<h1 class="fw-bold display-5 text-black">@Model.title</h1>
+<p class="mb-4">
+    @Model.description
+</p>
+<form class="d-flex" style="max-width: 400px;">
+    <input type="email" class="form-control " placeholder="Mail bültenimize kayıt ol" />
+    <button type="submit" class="btn btn-danger text-white px-4">@Model.LabelButton</button>
+</form>

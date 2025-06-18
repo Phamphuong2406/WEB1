@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Web1.Models.FooterModel>
+
+<section class="text-white pt-5 pb-3" style="background-color: Red;">
+    <div class="container">
+        @foreach (var item in Model)
+        {
+           
+            <div class="row">
+                @foreach (var partner in item.LinkGroups)
+                {
+                    <div class="col-6 col-md-3 mb-3">
+                       
+                        @Html.Partial("_Footer2Partial", partner)
+                        @foreach (var Item in partner.Links)
+                        {
+                            <ul class="list-unstyled">
+
+                                <li> @Html.Partial("_Footer3Partial", Item)</li>
+
+                            </ul>
+                        }
+                    </div>
+                }
+               
+                @Html.Partial("_Footer1Partial", item)
+
+            </div>
+        }
+    </div>
+</section>

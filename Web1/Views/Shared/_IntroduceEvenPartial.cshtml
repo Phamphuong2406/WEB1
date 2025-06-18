@@ -1,0 +1,24 @@
+﻿@model Web1.Models.Introduce
+<div class="col-lg-6 col-md-6 col-xs-12" >
+    <div class="left-text-content" style="margin-bottom:150px">
+
+        <div class="section-heading">
+           
+            <h1>@Model.title</h1>
+        </div>
+        <p>@Model.description</p>
+
+    </div>
+    <button class="btn btn-danger text-white  fw-bold px-5 py-2">
+        @Model.TitleButton
+    </button>
+</div>
+<div class="col-lg-6 col-md-6 col-xs-12">
+    <div class="right-content">
+        <div class="thumb">
+            <br />
+            <img src="~/images/@Model.Image" width="550" />
+
+        </div>
+    </div>
+</div>

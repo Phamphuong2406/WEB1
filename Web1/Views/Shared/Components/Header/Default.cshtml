@@ -1,0 +1,12 @@
+﻿@model Web1.Models.Header
+<section class="position-relative" style="height: 780px;">
+    @Html.Partial("_HeaderImagePartial", Model)
+  
+    <div class="container position-relative z-1 text-white h-100 d-flex align-items-center">
+        <div class="col-md-6">
+            @Html.Partial("_HeaderPartial", Model)
+           
+        </div>
+    </div>
+
+</section>
