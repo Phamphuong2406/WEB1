@@ -10,6 +10,7 @@
 
         public string DescriptionTitle { get; set; }
         public string Icon { get; set; }
+        public string Icon2 { get; set; }
         public List<Block3> blocks { get; set; }
     }
 }

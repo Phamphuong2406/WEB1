@@ -22,48 +22,57 @@ namespace Web1.Service
                     new Partners
                     {
                 Logo = "logo1.png",
-                Name="Company1"
+                Name="Company1",
+                IsNone=true
                     },
                     new Partners
                 {
                     Name = "Company2",
-                    Logo = "logo2.png"
+                    Logo = "logo2.png",
+                IsNone=true
                 },
                     new Partners
                 {
                     Name = "Company3",
-                    Logo = "logo3.png"
+                    Logo = "logo3.png",
+                IsNone=true
                 },
                     new Partners
                 {
                     Name = "Company4",
-                    Logo = "logo4.png"
+                    Logo = "logo4.png",
+                IsNone=true
                 },
                     new Partners
                 {
                     Name = "Company5",
-                    Logo = "logo5.png"
+                    Logo = "logo5.png",
+                IsNone=true
                 } ,
                 new Partners
                 {
                     Name ="Company6",
-                    Logo="logo6.png"
+                    Logo="logo6.png",
+                IsNone=true
                 },
                     new Partners
                 {
                     Name = "Company7",
-                    Logo = "logo7.png"
+                    Logo = "logo7.png",
+                IsNone=false
                 } ,
                         new Partners
                 {
                     Name = "Company8",
-                    Logo = "logo8.png"
+                    Logo = "logo8.png",
+                IsNone=false
                 } ,
                             new Partners
                 {
                     Name = "Company9",
-                    Logo = "logo9.png"
-                } 
+                    Logo = "logo9.png",
+                IsNone=false
+                }
                 }
             };
         }

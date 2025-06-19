@@ -5,20 +5,23 @@ namespace Web1.Service
 {
     public interface IMenuService
     {
-        List<Menu> GetMenu();
+        MenuButton  GetMenu();
     }
     public class MenuService : IMenuService
     {
-        public List<Menu> GetMenu()
+        public MenuButton GetMenu()
         {
-            return new List<Menu>()
+            return new MenuButton
             {
-                new Menu{Title= "Çözüm ve Hizmetler"},
+                ButtonTitle= "İletişim",
+                menus = new List<Menu>
+                {
+new Menu{Title= "Çözüm ve Hizmetler"},
                  new Menu{Title= "Ürünler"},
                   new Menu{Title= "Teknolojiler"},
                    new Menu{Title= "İnsan Kaynakları"},
                     new Menu{Title= "Kurumsal"},
-                    new Menu{Title="İletişim"}
+                }
             };
 
         }

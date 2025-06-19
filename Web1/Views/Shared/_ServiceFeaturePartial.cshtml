@@ -1,11 +1,19 @@
 ﻿@model Web1.Models.ServiceFeature
 
 
-<div class="col-4  py-2  align-items-center">
+<div class="col-lg-4 col-md-6 col-12 align-items-center">
     <div class="text-center">
         <img class="featured-image " src="~/images/@Model.Icon" width="65" />
     </div>
 
-    <h4 class="text-center">@Model.Title</h4>
+    <h3 style="font-family: 'manrope'" class="text-center">@Model.Title</h3>
+    <p class="text-black text-center mb-0">@Model.Description</p>
+</div>
+<div class="col-lg-4 col-md-6 col-12 align-items-center">
+    <div class="text-center">
+        <img class="featured-image " src="~/images/@Model.Icon" width="65" />
+    </div>
+
+    <h3 style="font-family: 'manrope'" class="text-center">@Model.Title</h3>
     <p class="text-black text-center mb-0">@Model.Description</p>
 </div>

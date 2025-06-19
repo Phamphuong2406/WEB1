@@ -12,6 +12,8 @@ builder.Services.AddScoped<IPartnersService, PartnersService>();
 builder.Services.AddScoped<IIntroduceService, IntroduceService>();
 builder.Services.AddTransient<IMenuService, MenuService>();
 builder.Services.AddTransient<IBlock3Service, Block3Service>();
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
