@@ -1,48 +1,67 @@
 ﻿@model Web1.Models.Introduce
-<div class="d-none d-md-flex col-lg-6 col-md-6 col-12">
-    <div class="right-content">
-        <div class="thumb">
-            <br />
-            <img src="~/images/@Model.Image" width="504px" height="480px" radius="8px" />
+<!-- Desktop: Hiển thị lớn -->
+<div class="row d-none d-lg-flex">
 
+
+    <!-- Cột nội dung -->
+    <div class="col-6 d-flex flex-column justify-content-center left-text-content">
+        <div class="section-heading mb-3">
+            <h1>@Model.title</h1>
+        </div>
+        <p class="mb-4">@Model.description</p>
+        <button class="btn btn-danger text-white fw-bold px-5 py-2" style="width:160px; height:48px;">
+            @Model.TitleButton
+        </button>
+    </div>
+    <!-- Cột ảnh -->
+    <div class="col-6 right-content">
+        <div class="thumb text-center">
+            <img src="~/images/@Model.Image"
+                 class="img-fluid"
+                 style="border-radius:8px; max-height:480px;" />
         </div>
     </div>
 </div>
-<div class="col-lg-6 col-md-6 col-12">
-    <div class="right-text-content" style="width: 548px; height: 480px;">
 
-        <!-- Desktop: Hiển thị lớn -->
-        <div class="d-none d-lg-block">
-            <div class="section-heading mb-3">
-                <h1>@Model.title</h1>
-            </div>
-            <p>@Model.description</p>
+
+
+<!-- Mobile & Tablet: Ipad Pro trở xuống -->
+<div class="row d-none d-md-flex d-lg-none align-items-center">
+   
+
+    <!-- Cột nội dung -->
+    <div class="col-6 d-flex flex-column justify-content-center left-text-content">
+        <h1 class="fs-4 mb-2">@Model.title</h1>
+        <p class="mb-3">@Model.description</p>
+        <button class="btn btn-danger text-white fw-bold px-4 py-2" style="width:160px; height:48px;">
+            @Model.TitleButton
+        </button>
+    </div>
+    <!-- Cột ảnh -->
+    <div class="col-6 right-content text-center">
+        <div class="thumb">
+            <img src="~/images/@Model.Image"
+                 class="img-fluid"
+                 style="border-radius:8px; max-height:404px;" />
         </div>
+    </div>
+</div>
 
-        <!-- Mobile & Tablet: Ipad Pro trở xuống -->
-        <div class="d-block d-lg-none" style="width: 336px; height: 200px;">
+<!-- Mobile : iPhone trở xuống -->
+<div class="row d-block d-md-none">
+    <div style="width:335px; height: 312px;">
+        <div class="flex-column left-text-content mb-3">
             <h1 class="fs-4 mb-2">@Model.title</h1>
             <p class="mb-3">@Model.description</p>
+
+            <button class="btn btn-danger text-white fw-bold w-100" style="height:48px">
+                @Model.TitleButton
+            </button>
         </div>
 
-        <button class="d-none d-md-flex btn btn-danger text-white  fw-bold px-5 py-2" style="width:160px;height:48px">
-            @Model.TitleButton
-        </button>
-        <button class="d-block d-md-none btn btn-danger text-While  fw-bold " style="width:338px;height:48px">
-            @Model.TitleButton
-        </button>
-
-       
-    </div>
-</div>
-
-@* Mobile *@
-<div class="d-block d-md-none col-lg-6 col-md-6 col-12">
-    <div class="right-content">
-        <div class="thumb">
-            <br />
-            <img src="~/images/@Model.Image" width="335px" height="312px" radius="8px" />
-
+        <div class="right-content text-center">
+            <img src="~/images/@Model.Image" width="335" height="312" style="border-radius:8px;" />
         </div>
     </div>
 </div>
+

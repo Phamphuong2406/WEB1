@@ -10,13 +10,13 @@
                     {
                         
                         @Html.Partial("_ServiceFeatureTitlePartial", general)
-                        <div class="row ">
+                        
                             @foreach (var item in general.serviceFeature)
                             {
                                 @Html.Partial("_ServiceFeaturePartial", item)
                             }
 
-                        </div>
+                       
                     }
                 </div>
             </div>
