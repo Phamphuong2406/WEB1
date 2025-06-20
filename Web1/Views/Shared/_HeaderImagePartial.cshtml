@@ -1,4 +1,7 @@
 ﻿@model Web1.Models.Header
 <img src="@Url.Content("~/images/" + Model.image)"
-     class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover"
+     class="d-none d-md-block  w-100 h-100 position-absolute top-0 start-0 object-fit-cover"
+     style="z-index: -1;" alt="background" />
+<img src="@Url.Content("~/images/" + Model.image)"
+     class="d-block d-md-none w-100 h-100 position-absolute top-0 start-0 object-fit-cover"
      style="z-index: -1;" alt="background" />

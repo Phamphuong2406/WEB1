@@ -1,4 +1,11 @@
 ﻿@model Web1.Models.Partners
 
-    <img src="~/images/@Model.Logo" class="clients-image img-fluid" alt="@Model.Name">
+@* ipad trở lên *@
+<div class="d-none d-sm-block">
+    <img src="~/images/@Model.Logo" class="clients-image img-fluid" alt="@Model.Name" style="height: 60px; object-fit: contain;" />
 
+</div>
+@* iphone pro  *@
+<div class="d-block d-md-none" >
+    <img src="~/images/@Model.Logo" class="clients-image img-fluid" alt="@Model.Name" style="height: 40px; object-fit: contain;">
+</div>

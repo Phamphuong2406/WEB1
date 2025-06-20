@@ -1,19 +1,12 @@
 ﻿@model Web1.Models.ServiceFeature
 
 
-<div class="col-lg-4 col-md-6 col-12 align-items-center">
+@* Desktop: Hiển thị 3 cột *@
+<div class="service-item">
     <div class="text-center">
-        <img class="featured-image " src="~/images/@Model.Icon" width="65" />
+        <img class="featured-image mb-3" src="~/images/@Model.Icon" width="65" height="65" />
     </div>
-
-    <h3 style="font-family: 'manrope'" class="text-center">@Model.Title</h3>
-    <p class="text-black text-center mb-0">@Model.Description</p>
+    <h5 class="text-center mb-2">@Model.Title</h5>
+    <p class="text-black text-center" style="max-width: 300px; margin: 0 auto;">@Model.Description</p>
 </div>
-<div class="col-lg-4 col-md-6 col-12 align-items-center">
-    <div class="text-center">
-        <img class="featured-image " src="~/images/@Model.Icon" width="65" />
-    </div>
 
-    <h3 style="font-family: 'manrope'" class="text-center">@Model.Title</h3>
-    <p class="text-black text-center mb-0">@Model.Description</p>
-</div>

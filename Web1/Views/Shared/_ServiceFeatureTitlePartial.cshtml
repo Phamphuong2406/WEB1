@@ -1,6 +1,16 @@
 ﻿@model Web1.Models.GeneralServiceFeature
-<div style="margin:50px">
-    <h3 class="text-center">@Model.SectionTitle</h3>
+@* destop *@
+<div class="d-none d-lg-block" style=" margin:50px 220px 80px 220px">
+    <h3 class="text-center" style="margin-bottom:30px">@Model.SectionTitle</h3>
     <p class="text-center text-black">@Model.SectionDescription</p>
 </div>
-
+@* ipad *@
+<div class="d-none d-md-block d-lg-none" style="margin:50px 75px 80px 75px">
+    <h3 class="text-center" style="margin-bottom:30px">@Model.SectionTitle</h3>
+    <p class="text-center text-black">@Model.SectionDescription</p>
+</div>
+@* mobile *@
+<div class="d-block d-sm-none" style="margin:50px 15px 80px 15px">
+    <h3 class="text-center" style="margin-bottom:30px">@Model.SectionTitle</h3>
+    <p class="text-center text-black">@Model.SectionDescription</p>
+</div>
