@@ -1,6 +1,6 @@
 ﻿namespace Web1.Models
 {
-    public class Block6
+    public class Contact
     {
         public string Icon { get; set; }
         public string Title { get; set; }

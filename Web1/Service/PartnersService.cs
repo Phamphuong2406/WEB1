@@ -23,55 +23,55 @@ namespace Web1.Service
                     {
                 Logo = "logo1.png",
                 Name="Company1",
-                IsNone=true
+                IsNone=false
                     },
                     new Partners
                 {
                     Name = "Company2",
                     Logo = "logo2.png",
-                IsNone=true
+                IsNone=false
                 },
                     new Partners
                 {
                     Name = "Company3",
                     Logo = "logo3.png",
-                IsNone=true
+                IsNone=false
                 },
                     new Partners
                 {
                     Name = "Company4",
                     Logo = "logo4.png",
-                IsNone=true
+                IsNone=false
                 },
                     new Partners
                 {
                     Name = "Company5",
                     Logo = "logo5.png",
-                IsNone=true
+                IsNone=false
                 } ,
                 new Partners
                 {
                     Name ="Company6",
                     Logo="logo6.png",
-                IsNone=true
+                IsNone=false
                 },
                     new Partners
                 {
                     Name = "Company7",
                     Logo = "logo7.png",
-                IsNone=false
+                IsNone=true
                 } ,
                         new Partners
                 {
                     Name = "Company8",
                     Logo = "logo8.png",
-                IsNone=false
+                IsNone=true
                 } ,
                             new Partners
                 {
                     Name = "Company9",
                     Logo = "logo9.png",
-                IsNone=false
+                IsNone=true
                 }
                 }
             };

@@ -1,5 +1,5 @@
 ﻿@model Web1.Models.Header
-<section class="d-none d-md-block position-relative" style="height: 780px;">
+@* <section class="d-none d-md-block position-relative" style="height: 780px;">
     @Html.Partial("_HeaderImagePartial", Model)
   
     <div class="container position-relative z-1 text-white h-100 d-flex align-items-center">
@@ -12,8 +12,20 @@
 </section>
 <section class="d-block d-md-none position-relative" style="width:375px;height: 601px;">
     @Html.Partial("_HeaderImagePartial", Model)
+    <!-- Lớp phủ trắng mờ -->
+    <div class="white-overlay" style="z-index:1"></div>
+    <div class="container position-relative z-1 text-white h-100 d-flex align-items-center" style="z-index:2">
+        <div class="col-md-6">
+            @Html.Partial("_HeaderPartial", Model)
 
-    <div class="container position-relative z-1 text-white h-100 d-flex align-items-center">
+        </div>
+    </div>
+
+</section> *@
+<section class="header-container position-relative" >
+    @Html.Partial("_HeaderImagePartial", Model)
+    <div class="white-overlay " ></div>
+    <div class="header-content  container header-text position-relative z-1 text-white h-100 d-flex align-items-center">
         <div class="col-md-6">
             @Html.Partial("_HeaderPartial", Model)
 
@@ -21,3 +33,4 @@
     </div>
 
 </section>
+

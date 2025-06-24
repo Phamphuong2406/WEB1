@@ -2,15 +2,15 @@
 
 namespace Web1.Service
 {
-    public interface IBlock6Service
+    public interface IContactService
     {
-        Block6 GetBlock6();
+        Contact GetContact();
     }
-    public class  Block6Service: IBlock6Service
+    public class ContactService : IContactService
     {
-        public Block6 GetBlock6()
+        public Contact GetContact()
         {
-            return new Block6
+            return new Contact
             {
                 Icon= "Users.png",
                 Title= "Bize Ulaşın",

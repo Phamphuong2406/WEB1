@@ -15,7 +15,6 @@
             </button>
         </div>
     </div>
-    <!-- Cột ảnh -->
     <div class="col-6 right-content">
         <div class="thumb text-center">
             <img src="~/images/@Model.Image"
@@ -33,7 +32,7 @@
 
     <!-- Cột nội dung -->
     <div class="col-6 d-flex flex-column justify-content-center left-text-content">
-        <h2 class="fs-4 mb-2">@Model.title</h2>
+        <h1 class="fs-1 mb-2" style="font-size: 5rem;">@Model.title</h1>
         <p class="mb-3" style="color:#000000">@Model.description</p>
         <button class="btn btn-danger text-white fw-bold px-4 py-2" style="width:160px; height:48px;">
             @Model.TitleButton
@@ -51,7 +50,7 @@
 
 
 
-<div class="d-block d-md-none d-flex flex-column align-items-center" style="margin-bottom:20px">
+<div class="col-12 d-block d-md-none d-flex flex-column align-items-center" style="margin-bottom:20px">
     <div class="mb-3">
         <!-- Thẻ div đầu tiên -->
         <img src="~/images/@Model.Image"
@@ -60,9 +59,11 @@
 
     <div>
         <!-- Thẻ div thứ hai -->
-        <h3 class="fs-4 mb-2 text-center">@Model.title</h3>
+        <h1 class="fs-1 mb-2 text-center " style=" padding: 25px 0px;">
+            @Model.title
+        </h1>
         <p class="mb-3 text-center" style="color:#808080">@Model.description</p>
-        <button class="btn btn-danger text-white fw-bold w-100" style="height:48px; max-width: 400px;">
+        <button class="btn btn-danger text-white fw-bold w-100" style="height:48px; max-width: 400px;margin:25px 0px 35px 0px;">
             @Model.TitleButton
         </button>
     </div>

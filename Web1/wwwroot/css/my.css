@@ -17,6 +17,41 @@
         width: 48%;
     }
 }
+/* Mobile: iPhone 11 Pro trở xuống */
+@media (max-width: 575.98px) {
+    .text-testYone {
+        margin: 0px 30px 0px 30px;
+    }
+}
+
+/* Tablet: iPad Pro, iPad Air, v.v. */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .text-testYone {
+        margin: 0px;
+    }
+}
+@media(min-width:431px){
+    .test__box {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .clients-image--tablet-is-none{
+        display:none;
+    }
+    .header-container {
+       
+        height: 780px;
+    }
+}
+
+/* Desktop: Laptop trở lên */
+@media (min-width: 1200px) {
+    .text-testYone {
+        margin: 0px;
+    }
+}
 
 @media (min-width: 1025px) {
     /* Desktop: hiển thị 3 cột */
@@ -24,3 +59,191 @@
         width: 31.5%;
     }
 }
+.partner-container-mobile {
+    display: none;
+   
+}
+
+.custom-col {
+    flex: 0 0 20%;
+    margin:10px;
+}
+
+
+.partner-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.subscribe-input-group {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+    .subscribe-input-group input {
+        width: 100%;
+        height: 100%;
+        padding: 0 160px 0 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #000;
+        font-size: 1rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .subscribe-input-group button {
+        position: absolute;
+        top: 6px;
+        bottom: 6px;
+        right: 6px;
+        padding: 0 24px;
+        border: none;
+        border-radius: 8px;
+        background-color: #F84646;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+/*Mobile*/
+@media (max-width: 430px) {
+    .partner-container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        justify-content:center;
+       
+    }
+    /* Lớp phủ trắng từ phải sang trái */
+    .white-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+        z-index: 1;
+    }
+    .header-content{
+        z-index:2;
+    }
+    .test-wrap {
+        align-items: center;
+        flex-direction: column;
+        width: 65%;
+    }
+    .clients-image--mobile-is-none{
+        display:none
+    }
+    .test__box {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .partner-wrap{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-is-none {
+        display: none;
+      /*  align-items: center;
+        justify-content: center;*/
+    }
+
+    .partner-card-mobile {
+        width: 50%;
+        max-width: 320px;
+        height: 72px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .custom-col {
+        flex: 0 0 20%;
+        margin: 0px;
+    }
+    .testyone-image{
+        margin-bottom:15px;
+    }
+    .header-container {
+        width: 375px;
+        height: 601px;
+    }
+}
+/*ipad*/
+
+@media (min-width:768px)(max-width: 991px) {
+/*    .partner-container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .partner-card-mobile {
+        width: 50%;
+        max-width: 320px;
+        height: 72px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }*/
+}
+/*desktop*/
+@media(min-width:992px){
+
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+/* Nội dung chính */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+

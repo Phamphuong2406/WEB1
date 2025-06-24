@@ -1,33 +1,14 @@
 ﻿@model Web1.Models.Header
-<div class="d-none d-md-block">
-    <h1 class="fw-bold display-5 text-black">@Model.title</h1>
-    <p style="color:#000000" class="mb-4">
-        @Model.description
-    </p>
-    <div class="input-group shadow-sm rounded" style="max-width: 502px;height:73px;position: relative;">
-        <input type="text" class="form-control border-0" placeholder="Mail bültenimize kayıt ol" style="border-radius: 8px;color:#000000" />
-        <button class="btn btn-danger px-4 fw-bold" type="button" style="position: absolute; top: 5px;bottom:5px; right: 5px; border-radius: 8px;width:136px;background-color:#F84646">Kayıt Ol</button>
+
+
+
+<div class="subscribe-wrapper">
+    <h1 class="subscribe-title text-black text-center">@Model.title</h1>
+    <p class="subscribe-description text-black text-center">@Model.description</p>
+    <div class="subscribe-input-group" >
+        <input type="text" placeholder="Nhập email của bạn" />
+        <button type="button" style="background-color: #F84646; border-radius: 8px;">@Model.LabelButton</button>
     </div>
 </div>
-@* mobile *@
-<div class="d-block d-md-none d-flex flex-column align-items-center text-center px-3">
-    <h1 class="fw-bold display-5 text-black mb-2">@Model.title</h1>
-
-    <p style="color:#000000" class="mb-3">
-        @Model.description
-    </p>
-
-    <div class="input-group shadow-sm" style="max-width: 502px; height: 73px; position: relative;margin-top:20px">
-        <input type="text" class="form-control border-0 pe-5"
-               placeholder="Mail bültenimize kayıt ol"
-               style="border-radius: 8px; color:#000000; height: 100%;" />
-        <button class="btn btn-danger px-4 fw-bold"
-                type="button"
-                style="position: absolute; top: 5px; bottom: 5px; right: 5px; border-radius: 8px; width: 136px; background-color: #F84646;">
-            @Model.LabelButton
-        </button>
-    </div>
-</div>
-
 
 
