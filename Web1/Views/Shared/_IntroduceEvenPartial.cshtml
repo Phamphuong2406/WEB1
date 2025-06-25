@@ -1,11 +1,11 @@
 ﻿@model Web1.Models.Introduce
 <!-- Desktop: Hiển thị lớn -->
-<div class="row d-none d-lg-flex" style="margin-Bottom:30px">
+<div class="row d-none d-lg-flex justify-content-between" style="margin-Bottom:30px">
 
 
     <!-- Cột nội dung -->
-    <div class="col-6 d-flex flex-column justify-content-center left-text-content">
-        <div style="margin:0px 60px 0px 0px ">
+    <div class="d-flex flex-column justify-content-center left-text-content left-box p-2" style="width:45%">
+        <div style="margin:0px 60px 0px 0px " >
             <div class="section-heading mb-3">
                 <h1>@Model.title</h1>
             </div>
@@ -15,11 +15,11 @@
             </button>
         </div>
     </div>
-    <div class="col-6 right-content">
+    <div class="col-6 right-content right-box p-2" style=" width:45%">
         <div class="thumb text-center">
             <img src="~/images/@Model.Image"
                  class="img-fluid float-end"
-                 style="border-radius:8px; max-height:440px;" />
+                 style="border-radius:8px;" />
         </div>
     </div>
 </div>

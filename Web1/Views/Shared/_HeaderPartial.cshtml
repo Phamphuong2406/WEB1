@@ -1,14 +1,39 @@
 ﻿@model Web1.Models.Header
 
-
-
 <div class="subscribe-wrapper">
-    <h1 class="subscribe-title text-black text-center">@Model.title</h1>
-    <p class="subscribe-description text-black text-center">@Model.description</p>
-    <div class="subscribe-input-group" >
-        <input type="text" placeholder="Nhập email của bạn" />
-        <button type="button" style="background-color: #F84646; border-radius: 8px;">@Model.LabelButton</button>
-    </div>
+    <form id="subscribe-form">
+        <h1 class="subscribe-title text-black text-center">@Model.title</h1>
+        <p class="subscribe-description text-black text-center">@Model.description</p>
+        <div class="subscribe-input-group">
+            <input type="text" name="email" id="emailInput" placeholder="Nhập email của bạn" />
+            <button type="submit" style="background-color: #F84646; border-radius: 8px;">@Model.LabelButton</button>
+        </div>
+    </form>
+    <div id="messageBox" style="color:red; font-weight:bold;"></div>
+  
 </div>
 
+<script>
+    document.getElementById("subscribe-form").addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const email = document.getElementById("emailInput").value;
 
+        const res = await fetch("/Home/SubscribeEmail", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email })
+        });
+
+               const data = await res.json(); // lấy nội dung JSON từ server
+
+        const messageBox = document.getElementById("messageBox");
+
+        if (res.ok) {
+            messageBox.style.color = "green";
+        } else {
+            messageBox.style.color = "red";
+        }
+
+        messageBox.innerText = data.message || "Có lỗi xảy ra.";
+    });
+</script>

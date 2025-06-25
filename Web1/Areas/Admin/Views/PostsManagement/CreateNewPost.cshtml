@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "CreateNewPost";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>CreateNewPost</h1>
+<style>
+    .login-box {
+        max-width: 400px;
+        margin: 80px auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+</style>
+<div class="login-box">
+    <h3 class="text-center mb-4">Tạo mới bài đăng</h3>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Tiêu đề</label>
+        <input type="text" class="form-control" id="email" required />
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input type="password" class="form-control" id="password" required />
+    </div>
+
+    <button id="loginButton" class="btn btn-danger w-100">Đăng nhập</button>
+</div>

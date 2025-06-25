@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "LogIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .login-box {
+        max-width: 400px;
+        margin: 80px auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+</style>
+<div class="login-box">
+    <h3 class="text-center mb-4">Đăng nhập quản trị</h3>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Tài khoản</label>
+        <input type="text" class="form-control" id="email" required />
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input type="password" class="form-control" id="password" required />
+    </div>
+
+    <button id="loginButton" class="btn btn-danger w-100">Đăng nhập</button>
+</div>
+
+
+<script>
+    document.getElementById('loginButton').addEventListener('click', async function (e) {
+        e.preventDefault(); // Ngăn reload lại trang
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        const response = await fetch('/Home/Login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email,
+                password
+            })
+        });
+
+        if (response.ok) {
+            const result = await response.text();
+            window.location.href = "/Admin/HomeAdmin/Index";
+        } else {
+            alert("Đăng nhập thất bại. Vui lòng kiểm tra tài khoản và mật khẩu.");
+        }
+    });
+</script>

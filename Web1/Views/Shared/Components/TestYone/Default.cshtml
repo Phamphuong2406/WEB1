@@ -8,9 +8,9 @@
         <div class="d-flex test-wrap justify-content-center g-3" >
             @foreach (var testYone in Model.blocks)
             {
-                <div class="col-md-3 clients-item-height" style="margin-top:10px;">
+                <div class="col-md-3 clients-item-height test-box" style="margin-top:10px;">
                     <div class="d-flex align-items-center justify-content-center test__box ">
-                        <div class="clients-text testyone-image d-flex flex-column justify-content-center" >
+                        <div class="clients-text testyone-image d-flex flex-column " >
                             @Html.Partial("_TestYonePatial", testYone)
                         </div>
                         <img src="~/images/@Model.Icon" class="clients-image  clients-image--mobile-is-none img-fluid mb-2" />
