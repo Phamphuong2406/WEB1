@@ -1,2 +1,21 @@
 ﻿@model Web1.Models.FooterModel
-<p class="text-white">@Model.Title </p>
+
+<div class="row justify-content-between">
+    <div class="left-box" style=" width:28%">
+        <p class="text-white ">@Model.Title</p>
+    </div>
+   
+    <div class="right-box d-flex justify-content-end" style=" width:28%">
+        <ul class="list-unstyled d-flex gap-3">
+            @foreach (var item in Model.footerLogoApps)
+            {
+                <li class="position-relative " style="width: 25px; height: 25px;">
+                    <img src="@Url.Content("~/images/" + item.LogoApp)"
+                         alt="@item.NameApp"
+                         class="img-fluid w-100 h-100 object-fit-contain rounded" />
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+

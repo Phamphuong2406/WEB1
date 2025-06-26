@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Extensions.Hosting;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web1.Data
@@ -12,5 +13,6 @@ namespace Web1.Data
         public string Password { get; set; }
         public string Email { get; set; }
         public string Role { get; set; }
+        public ICollection<IntroductoryPost> Posts { get; set; }
     }
 }

@@ -102,7 +102,7 @@
     width: 100%;
     max-width: 500px;
     height: 60px;
-    margin: 0 auto;
+   /* margin: 0 auto;*/
 }
 
     .subscribe-input-group input {
@@ -159,6 +159,7 @@
     .test-wrap {
         align-items: center;
         flex-direction: column;
+
         
     }
     .test-box{
@@ -265,5 +266,30 @@
     max-width: 700px;
     margin: 0 auto;
 }
-/*page Login*/
+/*Layout Admin*/
+/*.sidebar {
+    width: 220px;
+    background-color: #343a40;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+    .sidebar a {
+        color: white;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+    }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+.content {
+    margin-left: 220px;
+    padding: 30px;
+    width: 100%;
+}*/
 

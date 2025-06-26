@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Web1.Data;
+using Web1.Repository;
 using Web1.Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,9 @@ builder.Services.AddScoped<IPartnersService, PartnersService>();
 builder.Services.AddScoped<IIntroduceService, IntroduceService>();
 builder.Services.AddTransient<IMenuService, MenuService>();
 builder.Services.AddTransient<ITestYoneService, TestYoneService>();
+builder.Services.AddTransient<IPostService, PostService>();
+builder.Services.AddTransient<IIntroductoryPostRepo, IntroductoryPostRepo>();
+builder.Services.AddTransient<IUploadFileService, UploadFileService>();
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

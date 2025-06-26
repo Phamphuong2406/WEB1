@@ -1,12 +1,11 @@
-﻿@model IEnumerable<Web1.Models.FooterModel>
+﻿@model Web1.Models.FooterModel
 
 <section class="text-white pt-5 pb-3" style="background-color: #F84646;">
     <div class="container">
-        @foreach (var item in Model)
-        {
+
            
             <div class="row">
-                @foreach (var partner in item.LinkGroups)
+                @foreach (var partner in Model.LinkGroups)
                 {
                     <div class="col-12 col-md-3 mb-3">
                        
@@ -22,9 +21,9 @@
                     </div>
                 }
                
-                @Html.Partial("_Footer1Partial", item)
+                @Html.Partial("_Footer1Partial", Model)
 
             </div>
-        }
+        
     </div>
 </section>

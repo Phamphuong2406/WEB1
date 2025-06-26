@@ -4,15 +4,43 @@ namespace Web1.Service
 {
     public interface IFooterService
     {
-        List<FooterModel> GetSampleFooter();
+        FooterModel GetSampleFooter();
     }
-    public class FooterService: IFooterService
+    public class FooterService : IFooterService
     {
-        public List<FooterModel> GetSampleFooter()
+        public FooterModel GetSampleFooter()
         {
-            return new List<FooterModel> {   new FooterModel
+            return new FooterModel
             {
                 Title = "© Copyright 2010-2021 - Can Çevik",
+                footerLogoApps = new List<FooterLogoApp>
+                {
+                    new FooterLogoApp
+                    {
+                        NameApp="facebook",
+                        LogoApp="FacebookLogo.png"
+                    },
+                    new FooterLogoApp
+                    {
+                        NameApp="MediumLogo",
+                        LogoApp="MediumLogo.png"
+                    },
+                    new FooterLogoApp
+                    {
+                          NameApp="LinkedinLogo",
+                        LogoApp="LinkedinLogo.png"
+                    },
+                    new FooterLogoApp
+                    {
+                          NameApp="TwitterLogo",
+                        LogoApp="TwitterLogo.png"
+                    },
+                    new FooterLogoApp
+                    {
+                          NameApp="InstagramLogo",
+                        LogoApp="InstagramLogo.png"
+                    }
+                },
                 LinkGroups = new List<FooterLinkGroup>
             {
                 new FooterLinkGroup
@@ -61,8 +89,8 @@ namespace Web1.Service
 
                 }
             }
-            }};
-              
+            };
+
         }
     }
 }

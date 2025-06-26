@@ -7,7 +7,8 @@
     <meta charset="utf-8" />
     <title>Admin Panel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="c:\users\admin\source\repos\web1\web1\wwwroot\css\my.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/my.css" rel="stylesheet" />
 
     <style>
         body {
@@ -41,13 +42,13 @@
             padding: 30px;
             width: 100%;
         }
+       
     </style>
 </head>
 <body>
     <div class="sidebar">
         <h4 class="text-center">Hello Admin</h4>
-        <a href="/Admin/Home">Dashboard</a>
-        <a href="#">Quản lý người dùng</a>
+        <a href="~/Admin/PostsManagement">Quản lý bài viết</a>
         <a href="#">Quản lý sản phẩm</a>
         <a href="#">Báo cáo</a>
         <a href="#">Cài đặt</a>
@@ -61,5 +62,8 @@
 
         @RenderBody()
     </div>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/css/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
 </body>
 </html>
