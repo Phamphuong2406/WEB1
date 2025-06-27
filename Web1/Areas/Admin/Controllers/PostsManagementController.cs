@@ -14,10 +14,12 @@ namespace Web1.Areas.Admin.Controllers
     {
         private readonly IPostService _postService;
         private readonly IUploadFileService _fileService;
-        public PostsManagementController(AppDbContext context, IPostService postService, IUploadFileService fileService)
+        private readonly ISettingService _settingService;
+        public PostsManagementController(AppDbContext context, IPostService postService, IUploadFileService fileService, ISettingService settingService)
         {
             _postService = postService;
             _fileService = fileService;
+            _settingService = settingService;
         }
         public IActionResult Index()
         {
@@ -42,8 +44,13 @@ namespace Web1.Areas.Admin.Controllers
             }
             return null;
         }
+        [HttpGet]
+        public IActionResult CreateNewPost()
+        {
+            return View();
+        }
         [HttpPost]
-        public IActionResult CreateNewPost([FromForm] IntroductoryPostDTO postDTO)
+        public async Task<IActionResult> CreateNewPost([FromForm] IntroductoryPostDTO postDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -65,7 +72,7 @@ namespace Web1.Areas.Admin.Controllers
                     }
                    
                 }
-                string image = _fileService.SaveFile(postDTO.ImageFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
+                string image = await _fileService.SaveFile(postDTO.ImageFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
                 _postService.CreatePost(postDTO, userId, image);
                 return Ok(new { message = "Thêm mới thành công bài viết" });
 
@@ -79,11 +86,38 @@ namespace Web1.Areas.Admin.Controllers
            
         }
         [HttpPost]
-        public IActionResult actionResult(int id) {
+        public IActionResult DeletePost( int id) {
 
-            return Ok();
+            var result = _postService.DeletePost(id);
+            if(result == "Bài viết đã được xóa thành công")
+            {
+                return Ok();
+            }
+            return BadRequest();
         
         
         }
+        [HttpPost]
+        public IActionResult SetPostLimit(int limit)
+        {
+            try
+            {
+                _settingService.UpdateNumberOfPostsToShow(limit);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return BadRequest(new { message = "Đã xảy ra lỗi " + ex.Message });
+            }
+           
+        }
+        [HttpGet]
+        public IActionResult UpdatePost(int Id)
+        {
+            var post = _postService.GetPostbyPostId(Id);
+            return View(post);
+        }
+
     }
 }

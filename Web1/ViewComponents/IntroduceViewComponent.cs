@@ -1,18 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Web1.Repository;
 using Web1.Service;
 
 namespace Web1.ViewComponents
 {
     public class IntroduceViewComponent : ViewComponent
     {
-        private IIntroduceService _introduceService;
-        public IntroduceViewComponent(IIntroduceService introduceService)
+     
+        private IPostService _postService;
+        private ISettingService _settingService;
+        public IntroduceViewComponent(IPostService postService, ISettingService settingService)
         {
-            _introduceService = introduceService;
+            _postService = postService;
+            _settingService = settingService;
         }
         public IViewComponentResult Invoke()
         {
-            var data = _introduceService.GetIntroduce();
+            int limit = _settingService.GetNumberOfPostsToShow();
+            var data = _postService.GetListPost()
+                .Take(limit)
+                .OrderBy(x =>x.DisplayOrder);
             return View(data);
         }
     }

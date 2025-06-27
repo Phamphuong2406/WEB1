@@ -2,7 +2,7 @@
 {
     public interface IUploadFileService
     {
-        string SaveFile(IFormFile file, string directory, string[] allowedExtensions);
+        Task<string> SaveFile(IFormFile file, string directory, string[] allowedExtensions);
         void DeleteFile(string fileName, string directory);
     }
     public class UploadFileService : IUploadFileService
@@ -12,27 +12,28 @@
         {
             _webHostEnvironment = webHostEnvironment;
         }
-        public string SaveFile(IFormFile file, string directory, string[] allowedExtensions)
+        public async Task<string> SaveFile(IFormFile file, string directory, string[] allowedExtensions)
         {
             var wwwPath = _webHostEnvironment.WebRootPath;
-            var path = Path.Combine(wwwPath, directory); // wwwroot/images
+            var path = Path.Combine(wwwPath, directory);
+
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
-            // check the extesion is allowed or not
+
             var extension = Path.GetExtension(file.FileName);
             if (!allowedExtensions.Contains(extension))
             {
                 throw new InvalidOperationException($"Only {string.Join(",", allowedExtensions)} extensions are allowed");
             }
-            // create the unique file name
-            var newFileName = $"{Guid.NewGuid()}{extension}";  //asdfasd-sdfjadksfj-dda.jpeg
-                                                               // create fullPath = path+newFileName
+
+            var newFileName = $"{Guid.NewGuid()}{extension}";
             var fullPath = Path.Combine(path, newFileName);
-            // create a filestream
+
             using var fileStream = new FileStream(fullPath, FileMode.Create);
-            file.CopyToAsync(fileStream);
+            await file.CopyToAsync(fileStream); // ✅ Đã await
+
             return newFileName;
         }
 

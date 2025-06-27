@@ -1,10 +1,8 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "CreateNewPost";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>CreateNewPost</h1>
 <style>
     .login-box {
         max-width: 400px;
@@ -15,17 +13,82 @@
         border-radius: 10px;
     }
 </style>
-<div class="login-box">
-    <h3 class="text-center mb-4">Tạo mới bài đăng</h3>
 
-    <div class="mb-3">
-        <label for="email" class="form-label">Tiêu đề</label>
-        <input type="text" class="form-control" id="email" required />
-    </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Mật khẩu</label>
-        <input type="password" class="form-control" id="password" required />
-    </div>
+<form action="/admin/PostsManagement/CreateNewPost" method="post" id="createPostForm" enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="form-group mb-3">
+            <label class="form-label">Tiêu đề</label>
+            <input type="text" class="form-control" name="title" required>
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label">Mô tả</label>
+            <input type="text" class="form-control" name="description" required>
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label">Nội dung</label>
+            <textarea  name="Content" id="editor"></textarea>
+        </div>
+        <div class="form-group mb-3" >
+            <label class="form-label">Ảnh (tên file ảnh)</label>
+            <input type="file" class="form-control" id="ImageFile" name="ImageFile" accept="image/*" required>
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label">Ngày hết hạn</label>
+            <input type="date" class="form-control" name="ExpireAt" required>
+        </div>
 
-    <button id="loginButton" class="btn btn-danger w-100">Đăng nhập</button>
-</div>
+    </div>
+    <div class="">
+        <button type="submit" class="btn btn-primary">Lưu</button>
+    </div>
+</form>
+
+@section Scripts {
+
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+
+<script>
+        ClassicEditor
+             .create(document.querySelector('#editor'), {
+                 toolbar: [
+                     'heading', '|',
+                     'bold', 'italic', 'underline', '|',
+                     'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                     'alignment', 'bulletedList', 'numberedList', '|',
+                     'insertTable', 'link', 'imageUpload', 'mediaEmbed', '|',
+                     'undo', 'redo'
+                 ]
+             })
+             .then(editor => {
+                 editor.ui.view.editable.element.style.height = '300px';
+             })
+             .catch(error => {
+                 console.error(error);
+             });
+
+</script>
+<script>
+        document.getElementById('createPostForm').addEventListener('submit', function (e) {
+               e.preventDefault();
+               const form = e.target;
+               const formData = new FormData(form);
+
+               fetch(form.action, {
+                   method: 'POST',
+                   body: formData
+               })
+                   .then(response => {
+                       if (response.ok) {
+                           alert('Thông tin đã được thêm thành công!');
+                           window.location.href = "/admin/PostsManagement/Index";
+                       } else {
+                           alert('Có lỗi xảy ra, vui lòng thử lại.');
+                       }
+                   })
+                   .catch(error => {
+                       console.error('Error:', error);
+                       alert('Có lỗi xảy ra, vui lòng thử lại.');
+                   });
+           });
+</script>
+}

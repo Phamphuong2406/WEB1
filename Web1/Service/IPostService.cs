@@ -9,6 +9,8 @@ namespace Web1.Service
     {
         void CreatePost(IntroductoryPostDTO postDTO, int userIed, string image);
         List<IntroductoryPostDTO> GetListPost();
+        string DeletePost(int idPost);
+        IntroductoryPostDTO GetPostbyPostId(int idPost);
     }
     public class PostService : IPostService
     {
@@ -18,6 +20,18 @@ namespace Web1.Service
         {
             _postRepo = postRepo;
             _logger = logger;
+        }
+        public IntroductoryPostDTO GetPostbyPostId(int idPost)
+        {
+            try
+            {
+                return _postRepo.getPostbyId(idPost);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Lỗi khi hiển thị bài viết");
+                throw new ApplicationException("Có lỗi xảy ra khi hiển thị bài viết");
+            }
         }
         public List<IntroductoryPostDTO> GetListPost()
         {
@@ -44,6 +58,17 @@ namespace Web1.Service
                 throw new ApplicationException("Không thể thêm bài viết, vui lòng thử lại.");//Ném lỗi lên tầng trên để xử lý
             }
            
+        }
+        public string DeletePost(int idPost)
+        {
+          
+               var result = _postRepo.deletePost(idPost);
+                if (result ==1 )
+                {
+                    return "Bài viết đã được xóa thành công";
+
+                }
+                return "Không thể xóa bài viết vui lòng thử lại";
         }
     }
 }

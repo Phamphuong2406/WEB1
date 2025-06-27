@@ -3,91 +3,55 @@
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
-
-<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#createPostModal">
-    Thêm mới
-</button>
-
+<a href="/admin/PostsManagement/CreateNewPost" class="btn btn-info">Thêm mới</a>
 <table class="table table-bordered text-center mt-3">
     <thead class="table-light">
-        <tr>
-            <th>Id</th>
-            <th>Tiêu đề</th>
-            <th>Mô tả</th>
-            <th>Ảnh</th>
-            <th>Ngày đăng</th>
-            <th>Ngày hết hạn</th>
-            <th>Thứ tự hiển thị</th>
-            <th>Lựa chọn</th>
+        <tr class="text-center align-middle">
+            <th scope="col">Id</th>
+            <th scope="col">Tiêu đề</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Ảnh</th>
+            <th scope="col">Ngày đăng</th>
+            <th scope="col">Ngày hết hạn</th>
+            <th scope="col">Thứ tự hiển thị</th>
+            <th scope="col">Lựa chọn</th>
         </tr>
     </thead>
+
     <tbody>
         @if (Model != null)
         {
             foreach (var item in Model)
             {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.title</td>
-                    <td>@item.description</td>
+                <tr >
+                    <td class="text-end">@item.Id</td>
+                    <td class="text-start">@item.title</td>
+                    <td style="width:500px" class="text-start">@item.description</td>
                     <td>
-                        <img src="~/images/@item.Image" alt="Ảnh" width="60" height="40" />
-                    </td>
-                    <td>@item.Posteddate?.ToString("dd/MM/yyyy")</td>
-                    <td>@item.ExpireAt.ToString("dd/MM/yyyy")</td>
-                    <td>@item.DisplayOrder</td>
+                        <img src="~/images/@item.Image" alt="Ảnh" width="120" height="120" />
+                    </td>@* 
+                    @Html.Raw(Model.Content) *@
+
+                    <td class="text-end">@item.Posteddate?.ToString("dd/MM/yyyy")</td>
+                    <td class="text-end">@item.ExpireAt.ToString("dd/MM/yyyy")</td>
+                    <td class="text-end">@item.DisplayOrder</td>
                     <td>
                         <button class="btn btn-danger btn-circle" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                onclick="setDeleteId('${item.Id}')">
+                                onclick="setDeleteId(@item.Id)">
                             <i class="fas fa-trash"></i>
                         </button>
-                        
-                        / Sửa</td>
+                        <a href="/admin/PostsManagement/UpdatePost?id=@item.Id" style="height:35px; width:42px" class="btn btn-warning">
+                            <i class="fas fa-edit"></i> 
+                        </a>
+
+                    </td>
                 </tr>
             }
         }
     </tbody>
 </table>
 
-<!-- Modal Thêm mới -->
-<div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="createPostModalLabel">Thêm bài viết mới</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-            </div>
-            <form action="/admin/PostsManagement/CreateNewPost" method="post" id="createPostForm" enctype="multipart/form-data">
-                <div class="modal-body">
-                    <div class="form-group mb-3">
-                        <label class="form-label">Tiêu đề</label>
-                        <input type="text" class="form-control" name="title" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="form-label">Mô tả</label>
-                        <input type="text" class="form-control" name="description" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="form-label">Nội dung</label>
-                        <input type="text" class="form-control" name="Content" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="form-label">Ảnh (tên file ảnh)</label>
-                        <input type="file" class="form-control" id="ImageFile" name="ImageFile" accept="image/*" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="form-label">Ngày hết hạn</label>
-                        <input type="date" class="form-control" name="ExpireAt" required>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn btn-primary">Lưu</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+
 @* Modal Xóa *@
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -96,10 +60,10 @@
                 <h5 class="modal-title" id="deleteModalLabel">Xác nhận xóa</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form asp-action="DeleteDriver" asp-controller="Drivers" asp-area="Admin" id="deleteForm" method="post">
+            <form action="/admin/PostsManagement/DeletePost" id="deleteForm" method="post">
                 <div class="modal-body">
                     <p>Bạn có chắc chắn muốn xóa bài viết này không?</p>
-                    <input type="hidden" name="Id">
+                    <input type="hidden" name="Id" id="postIdToDelete">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
@@ -110,8 +74,30 @@
     </div>
 </div>
 @section Scripts {
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+
     <script>
-        document.getElementById('createPostForm').addEventListener('submit', function (e) {
+        ClassicEditor
+          .create(document.querySelector('#editor'), {
+            toolbar: [
+              'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote',
+              '|', 'insertImage', 'undo', 'redo'
+            ]
+          })
+          .catch(error => {
+              console.error(error);
+          });
+    </script>
+    <script>
+       
+       
+        function setDeleteId(id) {
+            document.getElementById('postIdToDelete').value = id;
+        }
+
+        // Submit form xóa bằng fetch
+        document.getElementById('deleteForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const form = e.target;
             const formData = new FormData(form);
@@ -122,7 +108,7 @@
             })
                 .then(response => {
                     if (response.ok) {
-                        alert('Thông tin đã được thêm thành công!');
+                        alert('Đã xóa bài viết!');
                         location.reload();
                     } else {
                         alert('Có lỗi xảy ra, vui lòng thử lại.');
@@ -133,29 +119,11 @@
                     alert('Có lỗi xảy ra, vui lòng thử lại.');
                 });
         });
-         document.getElementById('deleteForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const form = e.target;
-            const formData = new FormData(form);
 
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    if (response.ok) {
-                        alert('Đã xóa bài viết !');
-                        location.reload();
-                    } else {
-                        alert('Có lỗi xảy ra, vui lòng thử lại.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Có lỗi xảy ra, vui lòng thử lại.');
-                });
-        });
             
     </script>
+   
+
+
   
 }

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Web1.Data;
 using Web1.Repository;
@@ -26,6 +26,8 @@ builder.Services.AddTransient<ITestYoneService, TestYoneService>();
 builder.Services.AddTransient<IPostService, PostService>();
 builder.Services.AddTransient<IIntroductoryPostRepo, IntroductoryPostRepo>();
 builder.Services.AddTransient<IUploadFileService, UploadFileService>();
+builder.Services.AddTransient<IConfigurationRepo, ConfigurationRepo>();
+builder.Services.AddTransient<ISettingService, SettingService>();
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -54,6 +56,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseStaticFiles(); // Đảm bảo đã bật Static Files
 
 app.MapControllerRoute(
     name: "areas",

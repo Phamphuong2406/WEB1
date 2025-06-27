@@ -10,6 +10,7 @@ namespace Web1.Data
         public DbSet<Users> users { get; set; }
        public DbSet<Subscriber> subscribers { get; set; }
         public DbSet<IntroductoryPost> posts { get; set; }
+        public DbSet<Settings> settings { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
@@ -27,7 +28,7 @@ namespace Web1.Data
                       .IsRequired();
 
                 entity.Property(p => p.description)
-                      .HasMaxLength(255);
+                      .HasMaxLength(500);
 
                 entity.Property(p => p.Image)
                 .HasMaxLength(225);
@@ -37,6 +38,14 @@ namespace Web1.Data
                  entity.HasOne(p => p.User)
                 .WithMany(u => u.Posts)
                 .HasForeignKey(p => p.PosterId);
+            });
+            modelBuilder.Entity<Settings>(entity => {
+                entity.Property(p => p.Key)
+                .HasMaxLength(100);
+                entity.Property(p => p.Value)
+                .HasMaxLength(50);
+                entity.Property(p => p.Description)
+                .HasMaxLength(225);
             });
         }
     }

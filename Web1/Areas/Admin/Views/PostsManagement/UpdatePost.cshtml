@@ -1,0 +1,57 @@
+﻿@model Web1.DTO.IntroductoryPostDTO
+
+@{
+    ViewData["Title"] = "UpdatePost";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<form asp-action="UpdatePost" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label class="form-label">Tiêu đề</label>
+        <input class="form-control" asp-for="Title" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Mô tả</label>
+        <input class="form-control" asp-for="description" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Nội dung</label>
+        <textarea class="form-control" asp-for="Content" id="editor"></textarea>
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Ảnh</label>
+        <input type="file" class="form-control" asp-for="ImageFile" />
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <img src="~/images/@Model.Image" width="120" />
+        }
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Ngày hết hạn</label>
+        <input type="date" class="form-control" asp-for="ExpireAt" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label class="form-label">Thứ tự hiển thị</label>
+        <input class="form-control" asp-for="DisplayOrder" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>
+
+@section Scripts {
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
+    </script>
+}

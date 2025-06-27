@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<form id="postLimitForm" method="get" action="/admin/PostsManagement/SetPostLimit" class="d-flex align-items-center gap-2">
+    <label for="postLimit" class="form-label mb-0">Số lượng bài đăng:</label>
+    <input type="number" id="postLimit" name="limit" min="1" max="10" class="form-control" style="width:100px;" required />
+    <button type="submit" class="btn btn-primary">Xác nhận</button>
+</form>
+
+
+<script>
+    document.getElementById('postLimitForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const limit = document.getElementById('postLimit').value;
+
+        fetch(form.action + '?limit=' + encodeURIComponent(limit), {
+            method: 'Post'
+        })
+            .then(response => {
+                if (response.ok) {
+                     alert('Số lượng bài viết hiển thị đã được cấu hình thành công!');
+                        location.reload();
+                } else {
+                    throw new Error("Đã xảy ra lỗi khi gửi yêu cầu.");
+                }
+            })
+            .then(data => {
+                alert(data.message || "Thiết lập số lượng bài đăng thành công!");
+                location.reload(); 
+            })
+            .catch(error => {
+                console.error(error);
+                alert("Có lỗi xảy ra: " + error.message);
+            });
+    });
+</script>

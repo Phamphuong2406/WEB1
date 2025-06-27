@@ -57,8 +57,8 @@ namespace Web1.Migrations
 
                     b.Property<string>("description")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("title")
                         .IsRequired()
@@ -70,6 +70,34 @@ namespace Web1.Migrations
                     b.HasIndex("PosterId");
 
                     b.ToTable("posts");
+                });
+
+            modelBuilder.Entity("Web1.Data.Settings", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(225)
+                        .HasColumnType("varchar(225)");
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("settings");
                 });
 
             modelBuilder.Entity("Web1.Data.Subscriber", b =>
