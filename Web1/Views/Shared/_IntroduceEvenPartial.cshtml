@@ -9,7 +9,9 @@
             <div class="section-heading mb-3">
                 <h1>@Model.title</h1>
             </div>
-            <p class="mb-4" style="color:#808080">@Model.description</p>
+            <div class="mb-4" style="color:#808080">
+                @Html.Raw(Model.Content)
+            </div>
             <button class="btn btn-danger text-white fw-bold px-5 py-2" style="width:160px; height:48px;margin-top:55px">
                 jjjjjj
             </button>
@@ -19,7 +21,7 @@
         <div class="thumb text-center">
             <img src="~/images/@Model.Image"
                  class="img-fluid float-end"
-                 style="border-radius:8px;" />
+                 style="border-radius:8px; width:100%;" />
         </div>
     </div>
 </div>

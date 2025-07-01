@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Security.Claims;
 using Web1.Data;
 using Web1.DTO;
 using Web1.Service;
+using Web1.ViewModel;
 
 namespace Web1.Areas.Admin.Controllers
 {
@@ -21,18 +21,39 @@ namespace Web1.Areas.Admin.Controllers
             _fileService = fileService;
             _settingService = settingService;
         }
-        public IActionResult Index()
+        public IActionResult Index(string temp ="", int currentPage = 1,DateTime? validDate = null, DateTime? postingStartDate = null, DateTime? postingEndDate = null)
         {
+            temp =string.IsNullOrEmpty(temp)?"": temp.ToLower();
+            int pageSize = 2;
+           
             try
             {
-                var data = _postService.GetListPost();
-                return View(data);
+                var data = _postService.GetListPost(temp,validDate, postingStartDate, postingEndDate);
+
+                int totalRecord = data.Count();
+                int totalPage = (int)Math.Ceiling(totalRecord / (double)pageSize);
+                //current=1, skip(1-1=0), take=5
+                //currentPage = 2, skip(2-1)*5 = 5
+
+                var pagedData = data.Skip((currentPage - 1) * pageSize).Take(pageSize);
+
+                var model = new PostPagingViewModel
+                {
+                    Posts = pagedData,
+                    CurrentPage = currentPage,
+                    TotalPage = totalPage,
+                    Temp = temp,
+                    ValidDate = validDate
+                };
+
+
+                return View(model);
             }
             catch (Exception ex)
             {
-                return BadRequest(new {message = "Lỗi " + ex.Message});
+                return BadRequest(new { message = "Lỗi " + ex.Message });
             }
-           
+
         }
         public int? CurrentUser()
         {
@@ -56,7 +77,7 @@ namespace Web1.Areas.Admin.Controllers
             {
                 return BadRequest(ModelState);
             }
-          
+
             int userId = CurrentUser() ?? -1;
             if (userId == -1)
             {
@@ -70,7 +91,7 @@ namespace Web1.Areas.Admin.Controllers
                     {
                         throw new InvalidOperationException("Dung lượng ảnh không được vượt quá 1 mb");
                     }
-                   
+
                 }
                 string image = await _fileService.SaveFile(postDTO.ImageFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
                 _postService.CreatePost(postDTO, userId, image);
@@ -81,21 +102,20 @@ namespace Web1.Areas.Admin.Controllers
             catch (Exception ex)
             {
                 ModelState.AddModelError(string.Empty, ex.Message);
-                return BadRequest(new {message = "Đã xảy ra lỗi " + ex.Message});
+                return BadRequest(new { message = "Đã xảy ra lỗi " + ex.Message });
             }
-           
+
         }
         [HttpPost]
-        public IActionResult DeletePost( int id) {
+        public IActionResult DeletePost(int id)
+        {
 
             var result = _postService.DeletePost(id);
-            if(result == "Bài viết đã được xóa thành công")
+            if (result == "Bài viết đã được xóa thành công")
             {
                 return Ok();
             }
             return BadRequest();
-        
-        
         }
         [HttpPost]
         public IActionResult SetPostLimit(int limit)
@@ -110,13 +130,47 @@ namespace Web1.Areas.Admin.Controllers
                 ModelState.AddModelError(string.Empty, ex.Message);
                 return BadRequest(new { message = "Đã xảy ra lỗi " + ex.Message });
             }
-           
+
         }
         [HttpGet]
         public IActionResult UpdatePost(int Id)
         {
             var post = _postService.GetPostbyPostId(Id);
             return View(post);
+        }
+        [HttpPost]
+        public async Task<ActionResult> UpdatePost(IntroductoryPostDTO model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            try
+            {
+                if (model.ImageFile != null)
+                {
+                    if (model.ImageFile.Length > 1 * 1024 * 1024)
+                    {
+                        throw new InvalidOperationException("Dung lượng ảnh không được vượt quá 1 mb");
+                    }
+                    string image = await _fileService.SaveFile(model.ImageFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
+                    _postService.UpdatePost(model, image);
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    _postService.UpdatePost(model, null);
+                    return RedirectToAction("Index");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+
+                throw;
+            }
         }
 
     }

@@ -11,6 +11,7 @@ namespace Web1.Data
        public DbSet<Subscriber> subscribers { get; set; }
         public DbSet<IntroductoryPost> posts { get; set; }
         public DbSet<Settings> settings { get; set; }
+       public DbSet<Partner> partners { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
@@ -47,6 +48,12 @@ namespace Web1.Data
                 entity.Property(p => p.Description)
                 .HasMaxLength(225);
             });
+            modelBuilder.Entity<Partner>(entity =>
+            {
+                entity.Property(p => p.Name)
+                .HasMaxLength(100);
+            });
+
         }
     }
 }

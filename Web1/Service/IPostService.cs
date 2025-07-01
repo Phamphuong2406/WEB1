@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using Web1.DTO;
 using Web1.Repository;
@@ -8,9 +9,10 @@ namespace Web1.Service
     public interface IPostService
     {
         void CreatePost(IntroductoryPostDTO postDTO, int userIed, string image);
-        List<IntroductoryPostDTO> GetListPost();
+        List<IntroductoryPostDTO> GetListPost(string temp, DateTime? validDate, DateTime? postingStartDate = null, DateTime? postingEndDate = null);
         string DeletePost(int idPost);
         IntroductoryPostDTO GetPostbyPostId(int idPost);
+        void UpdatePost(IntroductoryPostDTO model, string? imageUpdate);
     }
     public class PostService : IPostService
     {
@@ -33,11 +35,11 @@ namespace Web1.Service
                 throw new ApplicationException("Có lỗi xảy ra khi hiển thị bài viết");
             }
         }
-        public List<IntroductoryPostDTO> GetListPost()
+        public List<IntroductoryPostDTO> GetListPost(string temp, DateTime? validDate, DateTime? postingStartDate = null, DateTime? postingEndDate = null)
         {
             try
             {
-               return _postRepo.getListPost();
+               return _postRepo.getListPost(temp,validDate, postingStartDate, postingEndDate);
 
             }
             catch (Exception)
@@ -70,5 +72,18 @@ namespace Web1.Service
                 }
                 return "Không thể xóa bài viết vui lòng thử lại";
         }
+        public void UpdatePost(IntroductoryPostDTO model, string? imageUpdate)
+        {
+            try
+            {
+                _postRepo.UpdatePost(model, imageUpdate);
+            }
+            catch (Exception )
+            {
+
+                throw;
+            }
+        }
+
     }
 }

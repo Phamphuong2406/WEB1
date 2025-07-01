@@ -17,5 +17,6 @@ namespace Web1.DTO
         public DateTime? Posteddate { get; set; }
         public int? PosterId { get; set; }
         public string? Url { get; set; }
+        
     }
 }

@@ -28,6 +28,9 @@ builder.Services.AddTransient<IIntroductoryPostRepo, IntroductoryPostRepo>();
 builder.Services.AddTransient<IUploadFileService, UploadFileService>();
 builder.Services.AddTransient<IConfigurationRepo, ConfigurationRepo>();
 builder.Services.AddTransient<ISettingService, SettingService>();
+builder.Services.AddTransient<IPartnerPepo, PartnerRepo>();
+builder.Services.AddTransient<IPartnerService, PartnerService>();
+
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -56,7 +59,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseStaticFiles(); // Đảm bảo đã bật Static Files
+app.UseStaticFiles();
 
 app.MapControllerRoute(
     name: "areas",

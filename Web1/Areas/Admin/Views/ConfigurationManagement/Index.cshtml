@@ -1,41 +1,162 @@
-﻿
+﻿@model IEnumerable<Web1.DTO.SettingDTO>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+@* <button class="btn btn-info" onclick="openCreateModal">Thêm mới</button> *@
+<button class="btn btn-success mb-3" onclick="openCreateModal()">Thêm mới</button>
 
-<form id="postLimitForm" method="get" action="/admin/PostsManagement/SetPostLimit" class="d-flex align-items-center gap-2">
-    <label for="postLimit" class="form-label mb-0">Số lượng bài đăng:</label>
-    <input type="number" id="postLimit" name="limit" min="1" max="10" class="form-control" style="width:100px;" required />
-    <button type="submit" class="btn btn-primary">Xác nhận</button>
-</form>
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr class="text-center">
+            <th>Tính năng</th>
+            <th>Giá trị</th>
+            <th>Mô tả</th>
+            <th>Lựa chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <strong>@item.Key</strong>
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="@item.Value" readonly />
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="@item.Description" readonly />
+                </td>
+                <td>
+                    <button class="btn btn-warning" onclick="openEditModal(@item.Id)">Sửa</button>
+                    <button class="btn btn-danger" onclick="openDeleteModal(@item.Id)">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@* edit *@
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="editForm" method="post" action="/admin/ConfigurationManagement/UpdateSetting">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chỉnh sửa cài đặt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="Id" id="editId" />
+                    <div class="mb-3">
+                        <label class="form-label">Tính năng</label>
+                        <input type="text" class="form-control" name="Key" id="editKey" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Giá trị</label>
+                        <input type="text" class="form-control" name="Value" id="editValue" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mô tả</label>
+                        <input type="text" class="form-control" name="Description" id="editDescription" />
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@* add *@
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="addForm" method="post" action="/admin/ConfigurationManagement/CreateSetting">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chỉnh sửa cài đặt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="Id" id="editId" />
+                    <div class="mb-3">
+                        <label class="form-label">Tính năng</label>
+                        <input type="text" class="form-control" name="Key" id="editKey" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Giá trị</label>
+                        <input type="text" class="form-control" name="Value" id="editValue" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mô tả</label>
+                        <input type="text" class="form-control" name="Description" id="editDescription" />
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@* delete *@
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="deleteForm" method="post" action="/admin/ConfigurationManagement/DeleteSetting">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chỉnh sửa cài đặt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="Id" id="deleteId" />
+                    <p>Bạn có chắc chắn muốn xóa bài viết này không?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Xóa</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function openEditModal(id) {
+            fetch(`/admin/ConfigurationManagement/GetBySettingId?id=${id}`)
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('editId').value = data.id;
+                    document.getElementById('editValue').value = data.value;
+                    document.getElementById('editDescription').value = data.description;
+                     document.getElementById('editKey').value = data.key;
+                    const modal = new bootstrap.Modal(document.getElementById('editModal'));
+                    modal.show();
+                })
+                .catch(error => {
+                    alert("Không thể tải dữ liệu.");
+                    console.error(error);
+                });
+        }
+
+        function openCreateModal(){
+            const modal = new bootstrap.Modal(document.getElementById('createModal'));
+            modal.show();
+        }
+          function openDeleteModal(id){
+            const modal = new bootstrap.Modal(document.getElementById('deleteModal'));
+               document.getElementById('deleteId').value = id;
+            modal.show();
+        }
+
+    </script>
+}
 
 
-<script>
-    document.getElementById('postLimitForm').addEventListener('submit', function (e) {
-        e.preventDefault();
 
-        const form = e.target;
-        const limit = document.getElementById('postLimit').value;
 
-        fetch(form.action + '?limit=' + encodeURIComponent(limit), {
-            method: 'Post'
-        })
-            .then(response => {
-                if (response.ok) {
-                     alert('Số lượng bài viết hiển thị đã được cấu hình thành công!');
-                        location.reload();
-                } else {
-                    throw new Error("Đã xảy ra lỗi khi gửi yêu cầu.");
-                }
-            })
-            .then(data => {
-                alert(data.message || "Thiết lập số lượng bài đăng thành công!");
-                location.reload(); 
-            })
-            .catch(error => {
-                console.error(error);
-                alert("Có lỗi xảy ra: " + error.message);
-            });
-    });
-</script>

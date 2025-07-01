@@ -14,12 +14,13 @@ namespace Web1.ViewComponents
             _postService = postService;
             _settingService = settingService;
         }
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string temp, DateTime? validDate)
         {
             int limit = _settingService.GetNumberOfPostsToShow();
-            var data = _postService.GetListPost()
-                .Take(limit)
-                .OrderBy(x =>x.DisplayOrder);
+            var data = _postService.GetListPost(temp,validDate)
+
+                .OrderBy(x => x.DisplayOrder)
+                .Take(limit);
             return View(data);
         }
     }
