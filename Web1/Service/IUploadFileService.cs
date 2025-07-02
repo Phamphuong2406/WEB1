@@ -37,14 +37,37 @@
             return newFileName;
         }
 
-        public void DeleteFile(string fileName, string directory)
+        /*  public void DeleteFile(string fileName, string directory)
+          {
+              var fullPath = Path.Combine(_webHostEnvironment.WebRootPath, directory, fileName);
+              if (!Path.Exists(fullPath))
+              {
+                  throw new FileNotFoundException($"File {fileName} does not exists");
+              }
+              File.Delete(fullPath);
+          }*/
+        /*public void DeleteFile(string fileName, string directory)
         {
             var fullPath = Path.Combine(_webHostEnvironment.WebRootPath, directory, fileName);
-            if (!Path.Exists(fullPath))
+
+            if (!File.Exists(fullPath))
             {
                 throw new FileNotFoundException($"File {fileName} does not exists");
             }
+
             File.Delete(fullPath);
+        }*/
+        public void DeleteFile(string fileName, string directory)
+        {
+            var fullPath = Path.Combine(_webHostEnvironment.WebRootPath, directory, fileName);
+
+            if (File.Exists(fullPath))
+            {
+                File.Delete(fullPath);
+            }
+            // Ngược lại, không làm gì cả
         }
+
+
     }
 }

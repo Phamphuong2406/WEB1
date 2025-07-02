@@ -75,7 +75,6 @@ namespace Web1.Repository
                 _context.SaveChanges();
             }
 
-            
         }
         public void deleteSetting(int id)
         {

@@ -4,44 +4,96 @@
     ViewData["Title"] = "UpdatePost";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+<style>
+    .file-upload-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border: 2px dashed #555;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 48px;
+        color: #555;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+        .file-upload-label:hover {
+            border-color: #ff4d4d;
+            color: #ff4d4d;
+        }
+
+    .file-upload-input {
+        display: none;
+    }
+
+    #removeImageBtn {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: transparent;
+        color: #B5BECF;
+        border: none;
+        font-size: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+</style>
 
 <form asp-action="UpdatePost" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
 
     <div class="form-group mb-3">
         <label class="form-label">Tiêu đề</label>
-        <input class="form-control" value="@Model.title" name="title"/>
+        <input class="form-control" value="@Model.title" name="title" />
     </div>
 
     <div class="form-group mb-3">
         <label class="form-label">Mô tả</label>
-        <input class="form-control" value="@Model.description" name="description"/>
+        <input class="form-control" value="@Model.description" name="description" />
     </div>
 
     <div class="form-group mb-3">
         <label class="form-label">Nội dung</label>
-        <textarea class="form-control" value="@Model.Content"  id="editor" name="Content">@Model.Content</textarea>
+        <textarea class="form-control" id="editor" name="Content">@Model.Content</textarea>
     </div>
 
     <div class="form-group mb-3">
+        <label class="form-label">Ảnh mới (nếu muốn thay đổi)</label>
+        <div class="d-flex align-items-center gap-3">
+            <label for="ImageFile" class="file-upload-label">+</label>
+            <input type="file" name="ImageFile" id="ImageFile" class="file-upload-input" accept="image/*" />
+            <div class="position-relative">
+                <img id="imgpreview" class="pt-2" style="display:none; width:100px; height:100px;" />
+                <button type="button" id="removeImageBtn">x</button>
+            </div>
+        </div>
 
-        <label class="form-label">Ảnh mới(nêú muốn thay đổi)</label>
-        <input type="file" class="form-control" name="ImageFile" />
-        @if (!string.IsNullOrEmpty(Model.Image))
-        {
-            <img src="~/images/@Model.Image" width="120" />
-        }
+        <div class="d-flex align-items-center gap-3 mt-2">
+            <label class="form-label">Ảnh hiện tại:</label>
+            @if (!string.IsNullOrEmpty(Model.Image))
+            {
+                <img src="~/images/@Model.Image" width="120" />
+            }
+        </div>
     </div>
 
     <div class="form-group mb-3">
         <label class="form-label">Ngày hết hạn</label>
         <input type="date" class="form-control" name="ExpireAt" value="@Model.ExpireAt.ToString("yyyy-MM-dd")" />
-
     </div>
 
     <div class="form-group mb-3">
         <label class="form-label">Thứ tự hiển thị</label>
         <input class="form-control" name="DisplayOrder" value="@Model.DisplayOrder" />
+    </div>
+
+    <div class="mb-3 form-check">
+        <input type="checkbox" asp-for="IsNone" class="form-check-input" id="isNoneCheckbox" />
+        <label class="form-check-label" for="isNoneCheckbox">Hiển thị trên trang chủ</label>
     </div>
 
     <button type="submit" class="btn btn-primary">Cập nhật</button>
@@ -51,9 +103,34 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
     <script>
         ClassicEditor
-          .create(document.querySelector('#editor'))
-          .catch(error => {
-              console.error(error);
-          });
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+    <script>
+        const fileInput = document.getElementById("ImageFile");
+        const preview = document.getElementById("imgpreview");
+        const removeBtn = document.getElementById("removeImageBtn");
+
+        fileInput.addEventListener("change", function () {
+            if (this.files && this.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = "block";
+                    removeBtn.style.display = "inline-block";
+                };
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+
+        removeBtn.addEventListener("click", function () {
+            preview.src = "";
+            preview.style.display = "none";
+            removeBtn.style.display = "none";
+            fileInput.value = ""; // Reset input file
+        });
     </script>
 }

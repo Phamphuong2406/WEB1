@@ -35,29 +35,12 @@ namespace Web1.Repository
                 ExpireAt = model.ExpireAt,
                 PosterId = userId,
                 DisplayOrder = 1,
-                Url = Generate.GenerateSlug(model.title)
-
+                Url = Generate.GenerateSlug(model.title),
+                IsNone = model.IsNone
             });
             _context.SaveChanges();
         }
-        /* public List<IntroductoryPostDTO> getListPost(string temp, DateTime? validDate)
-         {
-             return _context.posts
-                 .Where(z => z.title.ToLower().StartsWith(temp) || z.description.ToLower().StartsWith(temp) || temp == "" || z.Posteddate <= validDate&& z.ExpireAt >=validDate)
-                 .Select(x => new IntroductoryPostDTO
-             {
-                 title = x.title,
-                 description = x.description,
-                 Content = x.Content,
-                 Image = x.Image,
-                 Posteddate = x.Posteddate,
-                 ExpireAt = x.ExpireAt,
-                 Id = x.Id,
-                 Url = x.Url,
-                 PosterId = x.PosterId,
-                 DisplayOrder = x.DisplayOrder,
-             }).ToList();
-         }*/
+       
         public List<IntroductoryPostDTO> getListPost(string temp, DateTime? validDate, DateTime? postingStartDate = null, DateTime? postingEndDate = null)
         {
             temp = string.IsNullOrEmpty(temp) ? "" : temp.ToLower();
@@ -96,7 +79,6 @@ namespace Web1.Repository
             }).ToList();
            
         }
-
         public IntroductoryPostDTO getPostbyId(int id)
         {
             var post = _context.posts.FirstOrDefault(x => x.Id == id);
@@ -148,7 +130,7 @@ namespace Web1.Repository
             post.Content = model.Content;
             post.ExpireAt = model.ExpireAt;
             post.DisplayOrder = model.DisplayOrder;
-
+            post.IsNone = model.IsNone;
             _context.SaveChanges();
         }
 

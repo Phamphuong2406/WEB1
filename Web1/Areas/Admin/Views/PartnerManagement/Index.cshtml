@@ -3,6 +3,45 @@
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+<style>
+    .file-upload-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border: 2px dashed #555;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 48px;
+        color: #555;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+        .file-upload-label:hover {
+            border-color: #ff4d4d;
+            color: #ff4d4d;
+        }
+
+    .file-upload-input {
+        display: none;
+    }
+
+    #removeImageBtn {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: transparent;
+        color: #B5BECF;
+        border: none;
+        font-size: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+</style>
+
 <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#createModal">Thêm mới</button>
 
 <table class="table table-bordered text-center mt-3">
@@ -32,13 +71,15 @@
                     <td class="text-end">@item.IsNone</td>
 
                     <td>
+                        <button class="btn btn-warning btn-circle" data-bs-toggle="modal" data-bs-target="#editModal"
+                                onclick="setEditId(@item.Id)">
+                            <i class="fas fa-edit"></i>
+                        </button>
                         <button class="btn btn-danger btn-circle" data-bs-toggle="modal" data-bs-target="#deleteModal"
                                 onclick="setDeleteId(@item.Id)">
                             <i class="fas fa-trash"></i>
                         </button>
-                        <a href="/admin/PostsManagement/UpdatePost?id=@item.Id" style="height:35px; width:42px" class="btn btn-warning">
-                            <i class="fas fa-edit"></i>
-                        </a>
+                        
 
                     </td>
                 </tr>
@@ -47,6 +88,7 @@
     </tbody>
 
 </table>
+@* Popup create *@
 <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <form id="createForm" method="post" enctype="multipart/form-data" action="/admin/PartnerManagement/CreateNewPartner">
@@ -64,10 +106,12 @@
                         <label class="form-label">Logo</label>
                         <input type="file" name="LogoFile" class="form-control" required />
                     </div>
+                   
                     <div class="mb-3 form-check">
-                        <input type="checkbox" name="IsNone" class="form-check-input" id="isNoneCheckbox" />
-                        <label class="form-check-label" for="isNoneCheckbox">Hiển thị trên trang chủ</label>
+                        <input asp-for="IsNone" class="form-check-input" type="checkbox" />
+                        <label asp-for="IsNone" class="form-check-label">Hiển thị trên trang chủ</label>
                     </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Lưu</button>
@@ -77,11 +121,74 @@
         </form>
     </div>
 </div>
+@* Popup edit *@
+<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <form asp-action="UpdatePartner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chỉnh sửa thông tin đối tác</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editIdInput" name="Id" />
+                    <div class="mb-3">
+                        <label>Tên công ti</label>
+                        <input type="text" id="editname" name="name" class="form-control" />
+                    </div>
+                  @*   <div class="mb-3">
+                        <label>Logo</label>
+                        <div class="d-flex align-items-center gap-3">
+                            <label for="ImageFile" class="file-upload-label">+</label>
+                            <input type="file" name="ImageFile" id="ImageFile" class="file-upload-input" accept="image/*" />
+                            <div class="position-relative">
+                                <img id="imgpreview" class="pt-2" style="display:none; width:100px; height:100px;" />
+                                <button type="button" id="removeImageBtn">x</button>
+                            </div>
+                            <div class="position-relative">
+                                <img id="previewLogo" src="~/images/default.png" style="display:block; width:100px; height:100px;" />
+                               
+                                <button type="button" id="removeImageBtn">x</button>
+                            </div>
+                            
+                        </div>
+                       
+                    </div> *@
+                    <div class="mb-3">
+                        <label>Logo</label>
+                        <div class="d-flex align-items-center gap-3">
+                            <label for="ImageFile" class="file-upload-label">+</label>
+                            <input type="file" name="ImageFile" id="ImageFile" class="file-upload-input" accept="image/*" />
+
+                            <!-- Ảnh preview sau khi chọn -->
+                            <div class="position-relative">
+                                <img id="imgpreview" class="pt-2" style="display:none; width:100px; height:100px;" />
+                                <button type="button" id="removeUploadedBtn" class="btn btn-sm btn-danger position-absolute top-0 start-100 translate-middle" style="display: none;">x</button>
+                            </div>
+
+                            <!-- Ảnh mặc định (có thể có từ dữ liệu trước đó) -->
+                            <div class="position-relative" id="defaultPreviewWrapper">
+                                <img id="previewLogo" src="~/images/default.png" style="width:100px; height:100px;" />
+                                <button type="button" id="removeDefaultBtn" class="btn btn-sm btn-danger position-absolute top-0 start-100 translate-middle">x</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
 
 @section Scripts {
     <script>
         document.getElementById("createModal").addEventListener('submit', function(e){
-            e.preventDefault();// ngăn mặc định
+            e.preventDefault();
             const form = e.target;
             const formData = new  FormData(form);
 
@@ -105,6 +212,92 @@
                 }
                 );
         });
+       
+        function setEditId(id) {
+            // Gửi request lên server để lấy dữ liệu chi tiết theo id
+            fetch(`/Admin/PartnerManagement/GetPostById?id=${id}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    document.getElementById("editname").value = data.name;
+                    document.getElementById("editLogo").value = data.logo;
+                    document.getElementById("editIdInput").value = data.id;
+                    document.getElementById("previewLogo").src = "/images/" + data.logo;
+                })
+                .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+        }
+
+
     </script>
+
+    @* <script>
+        const fileInput = document.getElementById("ImageFile");
+        const preview = document.getElementById("imgpreview");
+        const removeBtn = document.getElementById("removeImageBtn");
+
+        fileInput.addEventListener("change", function () {
+            if (this.files && this.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = "block";
+                    removeBtn.style.display = "inline-block";
+                };
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+
+        removeBtn.addEventListener("click", function () {
+            preview.src = "";
+            preview.style.display = "none";
+            removeBtn.style.display = "none";
+            fileInput.value = ""; // Reset input file
+        });
+    </script> *@
+    <script>
+        const imageFileInput = document.getElementById("ImageFile");
+        const imgPreview = document.getElementById("imgpreview");
+        const removeUploadedBtn = document.getElementById("removeUploadedBtn");
+
+        const previewLogo = document.getElementById("previewLogo");
+        const removeDefaultBtn = document.getElementById("removeDefaultBtn");
+        const defaultPreviewWrapper = document.getElementById("defaultPreviewWrapper");
+
+        // Khi chọn ảnh mới
+        imageFileInput.addEventListener("change", function () {
+            if (this.files && this.files[0]) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imgPreview.src = e.target.result;
+                    imgPreview.style.display = "block";
+                    removeUploadedBtn.style.display = "inline-block";
+
+                    // Ẩn ảnh mặc định nếu đang hiển thị
+                    if (previewLogo) {
+                        previewLogo.style.display = "none";
+                        removeDefaultBtn.style.display = "none";
+                    }
+                };
+
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+
+        // Xoá ảnh vừa chọn
+        removeUploadedBtn.addEventListener("click", function () {
+            imgPreview.src = "";
+            imgPreview.style.display = "none";
+            removeUploadedBtn.style.display = "none";
+            imageFileInput.value = null;
+        });
+
+        // Xoá ảnh mặc định
+        removeDefaultBtn.addEventListener("click", function () {
+            previewLogo.style.display = "none";
+            this.style.display = "none";
+        });
+    </script>
+
 
 }

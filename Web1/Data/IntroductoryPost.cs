@@ -17,6 +17,7 @@ namespace Web1.Data
         public int PosterId { get; set; }
         public int? DisplayOrder { get; set; }
         public string Url { get; set; }
+        public bool? IsNone { get; set; }
         public Users User { get; set; }
     }
 }

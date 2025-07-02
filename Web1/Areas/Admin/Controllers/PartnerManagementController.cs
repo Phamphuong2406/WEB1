@@ -10,9 +10,11 @@ namespace Web1.Areas.Admin.Controllers
     public class PartnerManagementController : Controller
     {
         private IPartnerService _partnerService;
-        public PartnerManagementController(IPartnerService partnerService)
+        private readonly IUploadFileService _fileService;
+        public PartnerManagementController(IPartnerService partnerService, IUploadFileService fileService)
         {
             _partnerService = partnerService;
+            _fileService = fileService;
         }
         
         [HttpGet]
@@ -22,11 +24,21 @@ namespace Web1.Areas.Admin.Controllers
             return View(data);
         }
         [HttpPost]
-        public IActionResult CreateNewPartner([FromForm]PartnerDTO model)
+        public async Task<IActionResult> CreateNewPartner([FromForm]PartnerDTO model)
         {
             try
             {
-                _partnerService.createPartner(model);
+
+                if (model.LogoFile != null)
+                {
+                    if (model.LogoFile.Length > 1 * 1024 * 1024)
+                    {
+                        throw new InvalidOperationException("Dung lượng ảnh không được vượt quá 1 mb");
+                    }
+
+                }
+                string image = await _fileService.SaveFile(model.LogoFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
+                _partnerService.createPartner(model,image);
                 return Ok(new {message="Thêm mới đối tác thành công"});
 ;            }
             catch (Exception ex)
@@ -34,6 +46,21 @@ namespace Web1.Areas.Admin.Controllers
                 return BadRequest(new {message = "Đã xảy ra lỗi" + ex.Message});
                 throw;
             }
+        }
+        [HttpGet]
+        public IActionResult GetPostById(int id)
+        {
+            try
+            {
+                var result = _partnerService.GetPartnerById(id);
+               return Json(result);
+
+            }
+            catch (Exception ex)
+            {
+                return Json(new { message = "Đã xảy ra lỗi" + ex.Message });
+            }
+
         }
     }
 }

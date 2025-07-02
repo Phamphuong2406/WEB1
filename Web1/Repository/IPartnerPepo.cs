@@ -6,8 +6,9 @@ namespace Web1.Repository
 {
     public interface IPartnerPepo
     {
+        PartnerDTO getPartnerById(int partnerId);
         List<PartnerDTO> getAllPartner();
-        void addNewPartner(PartnerDTO model);
+        void addNewPartner(PartnerDTO model, string logoImage);
     }
     public class PartnerRepo : IPartnerPepo
     {
@@ -17,6 +18,22 @@ namespace Web1.Repository
             _context = context;
             _context = context;
 
+        }
+        public PartnerDTO getPartnerById(int partnerId)
+        {
+            var data = _context.partners.FirstOrDefault(x => x.Id == partnerId);
+            if (data == null)
+            {
+                return null;
+            }
+            var result = new PartnerDTO
+            {
+                Id = data.Id,
+                Name = data.Name,
+                Logo = data.Logo,
+                IsNone = data.IsNone,
+            };
+            return result;
         }
         public List<PartnerDTO> getAllPartner()
         {
@@ -28,12 +45,12 @@ namespace Web1.Repository
                 IsNone = x.IsNone,
             }).ToList();
         }
-        public void addNewPartner(PartnerDTO model)
+        public void addNewPartner(PartnerDTO model, string logoImage)
         {
             var partner = new Partner
             {
                 Name = model.Name,
-                Logo = model.Logo,
+                Logo = logoImage,
                 IsNone = true,
 
             };

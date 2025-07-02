@@ -43,7 +43,9 @@ namespace Web1.Areas.Admin.Controllers
                     CurrentPage = currentPage,
                     TotalPage = totalPage,
                     Temp = temp,
-                    ValidDate = validDate
+                    ValidDate = validDate,
+                    PostingStartDate = postingStartDate,
+                    PostingEndDate = postingEndDate
                 };
 
 
@@ -111,6 +113,11 @@ namespace Web1.Areas.Admin.Controllers
         {
 
             var result = _postService.DeletePost(id);
+            var imgdelete = _postService.GetPostbyPostId(id);
+            if (imgdelete != null)
+            {
+                _fileService.DeleteFile(imgdelete.Image, "Images");
+            }
             if (result == "Bài viết đã được xóa thành công")
             {
                 return Ok();
@@ -153,6 +160,11 @@ namespace Web1.Areas.Admin.Controllers
                     {
                         throw new InvalidOperationException("Dung lượng ảnh không được vượt quá 1 mb");
                     }
+                    var imgdelete = _postService.GetPostbyPostId(model.Id);
+                    if (imgdelete != null) {
+                        _fileService.DeleteFile(imgdelete.Image, "Images");
+                    }
+
                     string image = await _fileService.SaveFile(model.ImageFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
                     _postService.UpdatePost(model, image);
                     return RedirectToAction("Index");

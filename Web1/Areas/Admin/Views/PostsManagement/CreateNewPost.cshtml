@@ -26,15 +26,21 @@
         </div>
         <div class="form-group mb-3">
             <label class="form-label">Nội dung</label>
-            <textarea  name="Content" id="editor"></textarea>
+            <textarea name="Content" id="editor"></textarea>
         </div>
-        <div class="form-group mb-3" >
+        <div class="form-group mb-3">
             <label class="form-label">Ảnh (tên file ảnh)</label>
             <input type="file" class="form-control" id="ImageFile" name="ImageFile" accept="image/*" required>
+            <img id="imgpreview" class="pt-2" style="display:none; width:100px; height:100px;" />
         </div>
         <div class="form-group mb-3">
             <label class="form-label">Ngày hết hạn</label>
             <input type="date" class="form-control" name="ExpireAt" required>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" name="IsNone" class="form-check-input" />
+            <label class="form-check-label" for="isNoneCheckbox">Hiển thị trên trang chủ</label>
         </div>
 
     </div>
@@ -45,9 +51,9 @@
 
 @section Scripts {
 
-<script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
 
-<script>
+    <script>
         ClassicEditor
              .create(document.querySelector('#editor'), {
                  toolbar: [
@@ -66,8 +72,8 @@
                  console.error(error);
              });
 
-</script>
-<script>
+    </script>
+    <script>
         document.getElementById('createPostForm').addEventListener('submit', function (e) {
                e.preventDefault();
                const form = e.target;
@@ -90,5 +96,27 @@
                        alert('Có lỗi xảy ra, vui lòng thử lại.');
                    });
            });
-</script>
+
+    </script>
+    <script>
+          const fileInput = document.getElementById("ImageFile");
+        const preview = document.getElementById("imgpreview");
+
+        fileInput.addEventListener("change", function () {
+            if (this.files && this.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = "block";
+                };
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+
+        removeBtn.addEventListener("click", function () {
+            preview.src = "";
+            preview.style.display = "none";
+            fileInput.value = ""; // Reset input file
+        });
+    </script>
 }

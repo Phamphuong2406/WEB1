@@ -7,6 +7,6 @@
        
        public IFormFile?  LogoFile {  get; set; }
         public string? Name { get; set; }
-        public bool? IsNone { get; set; }
+        public bool IsNone { get; set; }
     }
 }
