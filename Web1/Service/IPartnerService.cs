@@ -9,6 +9,8 @@ namespace Web1.Service
         PartnerDTO GetPartnerById(int partnerId);
         List<PartnerDTO> GetAllPartner();
         void createPartner(PartnerDTO partnerDTO, string imageUpload);
+        void updatePartner(PartnerDTO partnerDTO, string? imgUpdate);
+        void deletePartner(int partnerId);
     }
     public class PartnerService: IPartnerService
     {
@@ -50,6 +52,28 @@ namespace Web1.Service
             {
 
                 throw;
+            }
+        }
+        public void updatePartner(PartnerDTO partnerDTO,string? imgUpdate)
+        {
+            try
+            {
+                _partnerPepo.UpdatePartner(partnerDTO,imgUpdate);
+            }
+            catch (Exception )
+            {
+                throw new Exception("Xảy ra lỗi vui lòng thử lại!");
+            }
+        }
+        public void deletePartner(int id) {
+            try
+            {
+                _partnerPepo.DeletePartner(id);
+            }
+            catch (Exception)
+            {
+
+                throw new Exception("Xảy ra lỗi vui lòng thử lại");
             }
         }
     }

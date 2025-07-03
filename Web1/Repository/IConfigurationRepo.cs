@@ -6,6 +6,7 @@ namespace Web1.Repository
     public interface IConfigurationRepo
     {
         int getNumberOfDisplays();
+        int getPartnerDisplayShape();
         Settings getSettingById(int settingId);
         List<SettingDTO> getAllSetting();
         void AddNewSetting(SettingDTO model);
@@ -34,6 +35,19 @@ namespace Web1.Repository
                 return 2;
             }
         }
+        public int getPartnerDisplayShape()
+        {
+            var setting = _context.settings.FirstOrDefault(x => x.Key == "PartnerDisplayFormat");
+            if (setting != null && int.TryParse(setting.Value, out int number))
+            {
+
+                return number;
+            }
+            else
+            {
+                return 1;
+            }
+        }
         public Settings getSettingById(int settingId)
         {
             return _context.settings.FirstOrDefault(x => x.Id == settingId);
@@ -49,6 +63,8 @@ namespace Web1.Repository
 
             }).ToList();
         }
+       
+
         public void AddNewSetting(SettingDTO model)
         {
             _context.settings.Add(new Settings

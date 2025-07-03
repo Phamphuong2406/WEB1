@@ -175,7 +175,6 @@ namespace Web1.Areas.Admin.Controllers
                     return RedirectToAction("Index");
                 }
 
-
             }
             catch (Exception ex)
             {

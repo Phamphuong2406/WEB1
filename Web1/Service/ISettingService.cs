@@ -8,6 +8,7 @@ namespace Web1.Service
     public interface ISettingService
     {
         int GetNumberOfPostsToShow();
+        int GetPartnerDisplayShape();
         Settings GetSettingById(int id);
         List<SettingDTO> GetAllConfiguration();
         void AddnewSetting(SettingDTO model);
@@ -26,6 +27,10 @@ namespace Web1.Service
         public int GetNumberOfPostsToShow()
         {
            return  _configRepo.getNumberOfDisplays();
+        }
+        public int GetPartnerDisplayShape()
+        {
+            return _configRepo.getPartnerDisplayShape();
         }
         public Settings GetSettingById(int id)
         {

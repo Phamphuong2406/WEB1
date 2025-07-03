@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Web1.Data;
 using Web1.DTO;
 using Web1.Service;
 
@@ -61,6 +62,53 @@ namespace Web1.Areas.Admin.Controllers
                 return Json(new { message = "Đã xảy ra lỗi" + ex.Message });
             }
 
+        }
+        [HttpPost]
+        public async  Task<IActionResult> UpdatePartner([FromForm]PartnerDTO model)
+        {
+            try
+            {
+                if (model.LogoFile != null)
+                {
+                    if (model.LogoFile.Length > 1 * 1024 * 1024)
+                    {
+                        throw new InvalidOperationException("Dung lượng ảnh không được vượt quá 1 mb");
+                    }
+                    var partner = _partnerService.GetPartnerById(model.Id);
+                    if(partner != null && partner.Name != null)
+                    {
+                        _fileService.DeleteFile(partner.Logo, "Images");
+                    }
+                   string image = await _fileService.SaveFile(model.LogoFile, "Images", new string[] { ".jpg", ".jpeg", ".png" });
+                    _partnerService.updatePartner(model,image);
+                
+                }
+                else
+                {
+                    _partnerService.updatePartner(model, null);
+                   
+                }
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+                throw;
+            }
+           
+        }
+        [HttpPost]
+        public IActionResult DeletePartner(int id)
+        {
+            try
+            {
+                _partnerService.deletePartner(id);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
         }
     }
 }

@@ -52,6 +52,8 @@ namespace Web1.Data
             {
                 entity.Property(p => p.Name)
                 .HasMaxLength(100);
+                entity.Property(p => p.Description)
+                .HasMaxLength(500);
             });
 
         }

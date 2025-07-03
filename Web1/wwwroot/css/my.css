@@ -267,4 +267,39 @@
     margin: 0 auto;
 }
 
+.file-upload-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 2px dashed #555;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 48px;
+    color: #555;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+    .file-upload-label:hover {
+        border-color: #ff4d4d;
+        color: #ff4d4d;
+    }
+
+.file-upload-input {
+    display: none;
+}
+
+#removeImageBtn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: transparent;
+    color: #B5BECF;
+    border: none;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
 

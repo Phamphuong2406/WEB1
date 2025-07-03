@@ -9,6 +9,8 @@ namespace Web1.Repository
         PartnerDTO getPartnerById(int partnerId);
         List<PartnerDTO> getAllPartner();
         void addNewPartner(PartnerDTO model, string logoImage);
+        void UpdatePartner(PartnerDTO model, string? imgUpdate);
+        void DeletePartner(int idPartner);
     }
     public class PartnerRepo : IPartnerPepo
     {
@@ -31,7 +33,7 @@ namespace Web1.Repository
                 Id = data.Id,
                 Name = data.Name,
                 Logo = data.Logo,
-                IsNone = data.IsNone,
+                IsActive = data.IsActive
             };
             return result;
         }
@@ -42,7 +44,9 @@ namespace Web1.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Logo = x.Logo,
-                IsNone = x.IsNone,
+                Description = x.Description,
+                DisplayOrder = x.DisplayOrder,
+                IsNoneMobile = x.IsNoneMobile,
             }).ToList();
         }
         public void addNewPartner(PartnerDTO model, string logoImage)
@@ -51,11 +55,38 @@ namespace Web1.Repository
             {
                 Name = model.Name,
                 Logo = logoImage,
-                IsNone = true,
-
+                Description = model.Description,
+                IsActive = true
             };
             _context.partners.Add(partner);
             _context.SaveChanges();
         }
+        public void UpdatePartner(PartnerDTO model, string? imgUpdate)
+        {
+            var partner = _context.partners.FirstOrDefault(x => x.Id == model.Id);
+            if (partner != null)
+            {
+                if (imgUpdate != null)
+                {
+                    partner.Logo = imgUpdate;
+                }
+                partner.Name = model.Name;
+                partner.Description = model.Description;
+                partner.IsActive = model.IsActive;
+                _context.SaveChanges();
+
+            }
+        }
+        public void DeletePartner(int idPartner)
+        {
+            var partner = _context.partners.FirstOrDefault(x => x.Id == idPartner);
+            if (partner != null)
+            {
+                _context.partners.Remove(partner);
+                _context.SaveChanges();
+
+            }
+        }
+
     }
 }
